@@ -17,6 +17,7 @@
 
    <modules>
       <module>lgshop</module>
+      <module>facade</module>
       <module>brands</module>
       <module>lgbase</module>
       <module>lgintegration</module>

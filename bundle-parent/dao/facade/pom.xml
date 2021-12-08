@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.leguide.backoffice.karaf.bundle.dao</groupId>
+		<artifactId>parent</artifactId>
+		<version>19.21.2</version>
+	</parent>
+	<artifactId>facade</artifactId>
+	<packaging>bundle</packaging>
+
+	<name>${application.name} :: ${project.name} :: ${project.artifactId}</name>
+	<description>DAO OSGi interface for Legacy/unified Database</description>
+	
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Import-Package>
+						com.leguide.backoffice.karaf.business.exception,
+						*
+						</Import-Package>
+						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.leguide.backoffice.karaf.bundle.business</groupId>
+			<artifactId>models</artifactId>
+			<version>${project.version}</version>
+			<type>bundle</type>
+		</dependency>
+	</dependencies>
+</project>

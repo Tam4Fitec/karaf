@@ -94,12 +94,6 @@
             <type>bundle</type>
         </dependency>
         <dependency>
-            <groupId>com.leguide.backoffice.karaf.bundle.business.services</groupId>
-            <artifactId>merchant</artifactId>
-            <version>${project.version}</version>
-            <type>bundle</type>
-        </dependency>
-        <dependency>
             <groupId>com.leguide.backoffice.karaf.bundle.business</groupId>
             <artifactId>models</artifactId>
             <version>${project.version}</version>
