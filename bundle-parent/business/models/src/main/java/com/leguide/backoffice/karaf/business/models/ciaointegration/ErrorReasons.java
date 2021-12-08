@@ -1,0 +1,6 @@
+package com.leguide.backoffice.karaf.business.models.ciaointegration;
+
+public enum ErrorReasons {
+    MAPPING_CUSTOMER, BLACKLISTED, MAPPING_CLIENT, MAPPING_CATEGORY, MAPPING_PLACEMENT,
+        MISSING_ID_ACTION, MISSING_CAT_IN_THESAURUS, ERROR_REFERENT, MISSING_MANDATORY_DATA;
+}

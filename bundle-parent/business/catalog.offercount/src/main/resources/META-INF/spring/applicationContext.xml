@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:cxf="http://camel.apache.org/schema/cxf"
+        xmlns:osgi="http://www.springframework.org/schema/osgi"
+        xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/osgi-compendium
+        http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
+        http://www.springframework.org/schema/osgi
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd
+        http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd "
+        default-lazy-init="false">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.leguide.backoffice.karaf.bundle.business.catalog.offercount"/>
+
+    <osgi:reference id="lgintegrationDS" interface="javax.sql.DataSource" filter="(osgi.jndi.service.name=jdbc/lgintegration)"/>
+    <osgi:reference id="lgbaseDS" interface="javax.sql.DataSource" filter="(osgi.jndi.service.name=jdbc/lgbase)"/>
+
+    <bean id="properties" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="propertiesArray">
+            <array>
+                <osgix:cm-properties id="catalogOfferCountProperties"
+                                     persistent-id="com.leguide.backoffice.karaf.bundle.business.catalog.offercount"/>
+            </array>
+        </property>
+    </bean>
+
+    <bean id="applicationContextUtilsBean"
+          class="com.leguide.backoffice.karaf.bundle.business.catalog.offercount.utils.ApplicationContextUtilsBean"/>
+
+    <bean id="namedTpl" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+          <constructor-arg name="dataSource" ref="lgintegrationDS"/>
+    </bean>
+    <bean id="catalogDao" class="com.leguide.backoffice.karaf.bundle.business.catalog.offercount.dao.CatalogDao">
+          <property name="tpl" ref="namedTpl"/>
+    </bean>
+    <bean id="validationFilter" class="com.leguide.backoffice.karaf.bundle.business.catalog.offercount.bean.Validation"/>
+
+
+    <osgi:reference id="engineClientService" interface="com.leguide.backoffice.karaf.bundle.services.search.engine.ISearchEngineClientService"/>
+    <osgi:reference id="storeDao" interface="com.leguide.backoffice.karaf.webservices.wsstore.dao.IStoreDao"/>
+
+    <bean id="enrichBean" class="com.leguide.backoffice.karaf.bundle.business.catalog.offercount.bean.EnrichBean">
+        <property name="catalogDao" ref="catalogDao"/>
+        <property name="storeDao" ref="storeDao"/>
+        <property name="engineClientService" ref="engineClientService"/>
+    </bean>
+
+    <camelContext id="camelCatalogOfferCountServices" xmlns="http://camel.apache.org/schema/spring">
+        <package>com.leguide.backoffice.karaf.bundle.business.catalog.offercount.route</package>
+    </camelContext>
+
+    <cxf:rsServer id="rsCatalogOfferCount" address="/catalog"
+                  serviceClass="com.leguide.backoffice.karaf.bundle.business.catalog.offercount.service.OfferCountService"/>
+
+    <bean id="quartz2" class="org.apache.camel.component.quartz2.QuartzComponent">
+        <property name="scheduler" ref="schedulerCatalogOfferCount"/>
+    </bean>
+    <bean id="schedulerCatalogOfferCount" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+         <property name="dataSource">
+            <osgi:reference interface="javax.sql.DataSource" filter="(osgi.jndi.service.name=jdbc/lgbe)"/>
+        </property>
+        <property name="autoStartup" value="false"/>
+        <property name="schedulerContextAsMap">
+            <map>
+                <entry key="CamelQuartzCamelContext-camelCatalogOfferCountServices" value-ref="camelCatalogOfferCountServices"/>
+            </map>
+        </property>
+        <property name="quartzProperties">
+            <props>
+                <prop key="org.quartz.scheduler.instanceName">catalog-offercount-provisioning</prop>
+                <prop key="org.quartz.scheduler.instanceId">AUTO</prop>
+                <prop key="org.quartz.scheduler.skipUpdateCheck">true</prop>
+                <prop key="org.quartz.jobStore.driverDelegateClass">org.quartz.impl.jdbcjobstore.PostgreSQLDelegate</prop>
+                <prop key="org.quartz.jobStore.isClustered">true</prop>
+                <prop key="org.quartz.jobStore.clusterCheckinInterval">5000</prop>
+                <prop key="org.quartz.jobStore.tablePrefix">QRTZ2_</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

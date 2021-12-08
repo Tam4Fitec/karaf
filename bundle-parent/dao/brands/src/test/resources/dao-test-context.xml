@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+    <import resource="infrastructure.xml" />
+    <context:component-scan base-package="com.leguide.backoffice.karaf.dao.brands" />
+
+    <bean  class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+    
+    <bean id="hazelcastInstance" class="com.hazelcast.core.Hazelcast" factory-method="newHazelcastInstance"/>
+    
+	<bean id="cacheService" class="com.leguide.backoffice.karaf.dao.brands.cache.CacheServiceImpl"/>
+   
+    <bean id="daofactory" class="com.leguide.backoffice.karaf.dao.DaoFactory"/>
+<!--         <property name="emFactory" ref="entityManagerFactory" /> -->
+<!--     </bean> -->
+
+   <bean id="jdbcTpl" class="com.leguide.backoffice.karaf.dao.brands.utils.StreamingResultSetEnabledTemplate">
+         <constructor-arg name="dataSource" ref="dataSource" />  
+   </bean>
+
+    <bean id="aliasDao" factory-bean="daofactory" factory-method="getIAliasDAO"/>
+    <bean id="brandsDao" factory-bean="daofactory" factory-method="getIBrandsDAO"/>
+</beans>

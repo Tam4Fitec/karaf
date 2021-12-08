@@ -1,0 +1,1781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RESULTAT version="1.1">
+    <PROTOCOL_VERSION>1.1</PROTOCOL_VERSION>
+    <QUERY_ID>6701356247636024507</QUERY_ID>
+    <EXACT_MATCH>
+        <CAT_ID>0</CAT_ID>
+        <CAT_NAME><![CDATA[]]></CAT_NAME>
+        <CAT_URL><![CDATA[]]></CAT_URL>
+    </EXACT_MATCH>
+    <WORD_COUNT>0</WORD_COUNT>
+    <PRODUCT_COUNT>65130</PRODUCT_COUNT>
+    <OFFRE_COUNT>80231</OFFRE_COUNT>
+    <NEUF_COUNT>80231</NEUF_COUNT>
+    <OCCASE_COUNT>261</OCCASE_COUNT>
+    <SOLDE_COUNT>0</SOLDE_COUNT>
+    <BARRE_COUNT>6539</BARRE_COUNT>
+    <SHOP_COUNT>446</SHOP_COUNT>
+    <CAT_COUNT>4294967295</CAT_COUNT>
+    <PAGE_COUNT>1000</PAGE_COUNT>
+    <PRICE_LIST_COUNT>5</PRICE_LIST_COUNT>
+    <PRICE_LIST>
+        <PRICE PLACE="1">
+            <PRICE_MIN>0</PRICE_MIN>
+            <PRICE_MAX>90</PRICE_MAX>
+            <PRODUCT_COUNT>68332</PRODUCT_COUNT>
+        </PRICE>
+        <PRICE PLACE="2">
+            <PRICE_MIN>90</PRICE_MIN>
+            <PRICE_MAX>310</PRICE_MAX>
+            <PRODUCT_COUNT>8451</PRODUCT_COUNT>
+        </PRICE>
+        <PRICE PLACE="3">
+            <PRICE_MIN>310</PRICE_MIN>
+            <PRICE_MAX>660</PRICE_MAX>
+            <PRODUCT_COUNT>2047</PRODUCT_COUNT>
+        </PRICE>
+        <PRICE PLACE="4">
+            <PRICE_MIN>660</PRICE_MIN>
+            <PRICE_MAX>990</PRICE_MAX>
+            <PRODUCT_COUNT>505</PRODUCT_COUNT>
+        </PRICE>
+        <PRICE PLACE="5">
+            <PRICE_MIN>990</PRICE_MIN>
+            <PRICE_MAX>51580</PRICE_MAX>
+            <PRODUCT_COUNT>896</PRODUCT_COUNT>
+        </PRICE>
+    </PRICE_LIST>
+    <MARK_COUNT>1283</MARK_COUNT>
+    <MARK_LIST_COUNT>100</MARK_LIST_COUNT>
+    <MARK_LIST>
+        <MARK PLACE="1">
+            <PROD_MARK><![CDATA[]]></PROD_MARK>
+            <PRODUCT_COUNT>24580</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="2">
+            <PROD_MARK><![CDATA[Otech]]></PROD_MARK>
+            <PRODUCT_COUNT>17860</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="3">
+            <PROD_MARK><![CDATA[OEM]]></PROD_MARK>
+            <PRODUCT_COUNT>2314</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="4">
+            <PROD_MARK><![CDATA[Accessoires Nokia Origine]]></PROD_MARK>
+            <PRODUCT_COUNT>2035</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="5">
+            <PROD_MARK><![CDATA[Accessoires Easymax]]></PROD_MARK>
+            <PRODUCT_COUNT>1737</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="6">
+            <PROD_MARK><![CDATA[Sennheiser]]></PROD_MARK>
+            <PRODUCT_COUNT>1246</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="7">
+            <PROD_MARK><![CDATA[Real Cable]]></PROD_MARK>
+            <PRODUCT_COUNT>1097</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="8">
+            <PROD_MARK><![CDATA[Accessoires sony ericsson origine]]></PROD_MARK>
+            <PRODUCT_COUNT>1024</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="9">
+            <PROD_MARK><![CDATA[Shure]]></PROD_MARK>
+            <PRODUCT_COUNT>945</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="10">
+            <PROD_MARK><![CDATA[Accessoires Samsung Origine]]></PROD_MARK>
+            <PRODUCT_COUNT>870</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="11">
+            <PROD_MARK><![CDATA[Vogel's]]></PROD_MARK>
+            <PRODUCT_COUNT>673</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="12">
+            <PROD_MARK><![CDATA[Philips]]></PROD_MARK>
+            <PRODUCT_COUNT>626</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="13">
+            <PROD_MARK><![CDATA[Dacomex]]></PROD_MARK>
+            <PRODUCT_COUNT>592</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="14">
+            <PROD_MARK><![CDATA[Mcad]]></PROD_MARK>
+            <PRODUCT_COUNT>549</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="15">
+            <PROD_MARK><![CDATA[Sony]]></PROD_MARK>
+            <PRODUCT_COUNT>548</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="16">
+            <PROD_MARK><![CDATA[HQ]]></PROD_MARK>
+            <PRODUCT_COUNT>526</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="17">
+            <PROD_MARK><![CDATA[Hama]]></PROD_MARK>
+            <PRODUCT_COUNT>520</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="18">
+            <PROD_MARK><![CDATA[Audiophony]]></PROD_MARK>
+            <PRODUCT_COUNT>463</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="19">
+            <PROD_MARK><![CDATA[Belkin]]></PROD_MARK>
+            <PRODUCT_COUNT>461</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="20">
+            <PROD_MARK><![CDATA[Audio-technica]]></PROD_MARK>
+            <PRODUCT_COUNT>427</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="21">
+            <PROD_MARK><![CDATA[Wesc]]></PROD_MARK>
+            <PRODUCT_COUNT>392</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="22">
+            <PROD_MARK><![CDATA[AKG]]></PROD_MARK>
+            <PRODUCT_COUNT>385</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="23">
+            <PROD_MARK><![CDATA[Skullcandy]]></PROD_MARK>
+            <PRODUCT_COUNT>374</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="24">
+            <PROD_MARK><![CDATA[Accessoires Htc Origine]]></PROD_MARK>
+            <PRODUCT_COUNT>360</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="25">
+            <PROD_MARK><![CDATA[Thomson]]></PROD_MARK>
+            <PRODUCT_COUNT>311</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="26">
+            <PROD_MARK><![CDATA[Erard]]></PROD_MARK>
+            <PRODUCT_COUNT>286</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="27">
+            <PROD_MARK><![CDATA[Platine Réseaux]]></PROD_MARK>
+            <PRODUCT_COUNT>272</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="28">
+            <PROD_MARK><![CDATA[Velleman]]></PROD_MARK>
+            <PRODUCT_COUNT>261</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="29">
+            <PROD_MARK><![CDATA[Neutrik]]></PROD_MARK>
+            <PRODUCT_COUNT>260</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="30">
+            <PROD_MARK><![CDATA[Logitech]]></PROD_MARK>
+            <PRODUCT_COUNT>249</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="31">
+            <PROD_MARK><![CDATA[Tp Link]]></PROD_MARK>
+            <PRODUCT_COUNT>231</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="32">
+            <PROD_MARK><![CDATA[Lindy]]></PROD_MARK>
+            <PRODUCT_COUNT>228</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="33">
+            <PROD_MARK><![CDATA[Monster Cable]]></PROD_MARK>
+            <PRODUCT_COUNT>225</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="34">
+            <PROD_MARK><![CDATA[Roline]]></PROD_MARK>
+            <PRODUCT_COUNT>223</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="35">
+            <PROD_MARK><![CDATA[G-mobility]]></PROD_MARK>
+            <PRODUCT_COUNT>209</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="36">
+            <PROD_MARK><![CDATA[Samsung]]></PROD_MARK>
+            <PRODUCT_COUNT>203</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="37">
+            <PROD_MARK><![CDATA[Monster]]></PROD_MARK>
+            <PRODUCT_COUNT>195</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="38">
+            <PROD_MARK><![CDATA[Caliber]]></PROD_MARK>
+            <PRODUCT_COUNT>193</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="39">
+            <PROD_MARK><![CDATA[Profigold]]></PROD_MARK>
+            <PRODUCT_COUNT>193</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="40">
+            <PROD_MARK><![CDATA[Monacor]]></PROD_MARK>
+            <PRODUCT_COUNT>192</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="41">
+            <PROD_MARK><![CDATA[Ifrogz]]></PROD_MARK>
+            <PRODUCT_COUNT>184</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="42">
+            <PROD_MARK><![CDATA[Nixon]]></PROD_MARK>
+            <PRODUCT_COUNT>177</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="43">
+            <PROD_MARK><![CDATA[Sommercable]]></PROD_MARK>
+            <PRODUCT_COUNT>163</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="44">
+            <PROD_MARK><![CDATA[Plantronics]]></PROD_MARK>
+            <PRODUCT_COUNT>155</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="45">
+            <PROD_MARK><![CDATA[Motorola]]></PROD_MARK>
+            <PRODUCT_COUNT>155</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="46">
+            <PROD_MARK><![CDATA[Klotz]]></PROD_MARK>
+            <PRODUCT_COUNT>154</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="47">
+            <PROD_MARK><![CDATA[QED]]></PROD_MARK>
+            <PRODUCT_COUNT>152</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="48">
+            <PROD_MARK><![CDATA[Beyerdynamic]]></PROD_MARK>
+            <PRODUCT_COUNT>149</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="49">
+            <PROD_MARK><![CDATA[Dataflex]]></PROD_MARK>
+            <PRODUCT_COUNT>148</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="50">
+            <PROD_MARK><![CDATA[Rondson]]></PROD_MARK>
+            <PRODUCT_COUNT>148</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="51">
+            <PROD_MARK><![CDATA[Bandridge]]></PROD_MARK>
+            <PRODUCT_COUNT>146</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="52">
+            <PROD_MARK><![CDATA[Viablue]]></PROD_MARK>
+            <PRODUCT_COUNT>143</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="53">
+            <PROD_MARK><![CDATA[Panasonic]]></PROD_MARK>
+            <PRODUCT_COUNT>141</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="54">
+            <PROD_MARK><![CDATA[Norstone]]></PROD_MARK>
+            <PRODUCT_COUNT>140</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="55">
+            <PROD_MARK><![CDATA[Graver Pas Cher]]></PROD_MARK>
+            <PRODUCT_COUNT>139</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="56">
+            <PROD_MARK><![CDATA[Pro Snake]]></PROD_MARK>
+            <PRODUCT_COUNT>137</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="57">
+            <PROD_MARK><![CDATA[Monster C?e]]></PROD_MARK>
+            <PRODUCT_COUNT>135</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="58">
+            <PROD_MARK><![CDATA[JVC]]></PROD_MARK>
+            <PRODUCT_COUNT>134</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="59">
+            <PROD_MARK><![CDATA[Koss]]></PROD_MARK>
+            <PRODUCT_COUNT>133</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="60">
+            <PROD_MARK><![CDATA[Zumreed]]></PROD_MARK>
+            <PRODUCT_COUNT>132</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="61">
+            <PROD_MARK><![CDATA[Cordial]]></PROD_MARK>
+            <PRODUCT_COUNT>130</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="62">
+            <PROD_MARK><![CDATA[Canon]]></PROD_MARK>
+            <PRODUCT_COUNT>124</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="63">
+            <PROD_MARK><![CDATA[Sommer Cable]]></PROD_MARK>
+            <PRODUCT_COUNT>114</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="64">
+            <PROD_MARK><![CDATA[Svd Pro]]></PROD_MARK>
+            <PRODUCT_COUNT>110</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="65">
+            <PROD_MARK><![CDATA[Meliconi]]></PROD_MARK>
+            <PRODUCT_COUNT>106</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="66">
+            <PROD_MARK><![CDATA[Vivanco]]></PROD_MARK>
+            <PRODUCT_COUNT>106</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="67">
+            <PROD_MARK><![CDATA[Samson]]></PROD_MARK>
+            <PRODUCT_COUNT>103</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="68">
+            <PROD_MARK><![CDATA[Prodipe]]></PROD_MARK>
+            <PRODUCT_COUNT>102</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="69">
+            <PROD_MARK><![CDATA[The Sssnake]]></PROD_MARK>
+            <PRODUCT_COUNT>102</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="70">
+            <PROD_MARK><![CDATA[Schulz Kabel]]></PROD_MARK>
+            <PRODUCT_COUNT>101</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="71">
+            <PROD_MARK><![CDATA[Apple]]></PROD_MARK>
+            <PRODUCT_COUNT>99</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="72">
+            <PROD_MARK><![CDATA[Behringer]]></PROD_MARK>
+            <PRODUCT_COUNT>97</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="73">
+            <PROD_MARK><![CDATA[Stagg]]></PROD_MARK>
+            <PRODUCT_COUNT>94</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="74">
+            <PROD_MARK><![CDATA[Elecom]]></PROD_MARK>
+            <PRODUCT_COUNT>91</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="75">
+            <PROD_MARK><![CDATA[Sardif]]></PROD_MARK>
+            <PRODUCT_COUNT>91</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="76">
+            <PROD_MARK><![CDATA[Goldkabel]]></PROD_MARK>
+            <PRODUCT_COUNT>91</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="77">
+            <PROD_MARK><![CDATA[Ergotron]]></PROD_MARK>
+            <PRODUCT_COUNT>90</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="78">
+            <PROD_MARK><![CDATA[Accessoires Blackberry Origine]]></PROD_MARK>
+            <PRODUCT_COUNT>90</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="79">
+            <PROD_MARK><![CDATA[Neumann]]></PROD_MARK>
+            <PRODUCT_COUNT>88</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="80">
+            <PROD_MARK><![CDATA[Olympus]]></PROD_MARK>
+            <PRODUCT_COUNT>88</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="81">
+            <PROD_MARK><![CDATA[Accessoires Alcatel]]></PROD_MARK>
+            <PRODUCT_COUNT>88</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="82">
+            <PROD_MARK><![CDATA[Générique]]></PROD_MARK>
+            <PRODUCT_COUNT>87</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="83">
+            <PROD_MARK><![CDATA[Maxell]]></PROD_MARK>
+            <PRODUCT_COUNT>86</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="84">
+            <PROD_MARK><![CDATA[Electrovoice]]></PROD_MARK>
+            <PRODUCT_COUNT>82</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="85">
+            <PROD_MARK><![CDATA[Accessoires Motorola Origine]]></PROD_MARK>
+            <PRODUCT_COUNT>81</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="86">
+            <PROD_MARK><![CDATA[Value]]></PROD_MARK>
+            <PRODUCT_COUNT>78</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="87">
+            <PROD_MARK><![CDATA[Aten]]></PROD_MARK>
+            <PRODUCT_COUNT>77</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="88">
+            <PROD_MARK><![CDATA[Hr Autoconfort]]></PROD_MARK>
+            <PRODUCT_COUNT>77</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="89">
+            <PROD_MARK><![CDATA[HP]]></PROD_MARK>
+            <PRODUCT_COUNT>73</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="90">
+            <PROD_MARK><![CDATA[Kenwood]]></PROD_MARK>
+            <PRODUCT_COUNT>73</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="91">
+            <PROD_MARK><![CDATA[Heil]]></PROD_MARK>
+            <PRODUCT_COUNT>73</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="92">
+            <PROD_MARK><![CDATA[T'nB]]></PROD_MARK>
+            <PRODUCT_COUNT>73</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="93">
+            <PROD_MARK><![CDATA[Furutech]]></PROD_MARK>
+            <PRODUCT_COUNT>72</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="94">
+            <PROD_MARK><![CDATA[Mac Mah]]></PROD_MARK>
+            <PRODUCT_COUNT>70</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="95">
+            <PROD_MARK><![CDATA[One For All]]></PROD_MARK>
+            <PRODUCT_COUNT>68</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="96">
+            <PROD_MARK><![CDATA[Rode]]></PROD_MARK>
+            <PRODUCT_COUNT>66</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="97">
+            <PROD_MARK><![CDATA[Urbanears]]></PROD_MARK>
+            <PRODUCT_COUNT>65</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="98">
+            <PROD_MARK><![CDATA[Hosa]]></PROD_MARK>
+            <PRODUCT_COUNT>64</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="99">
+            <PROD_MARK><![CDATA[Accessoires Lg Origine]]></PROD_MARK>
+            <PRODUCT_COUNT>64</PRODUCT_COUNT>
+        </MARK>
+        <MARK PLACE="100">
+            <PROD_MARK><![CDATA[Konig]]></PROD_MARK>
+            <PRODUCT_COUNT>63</PRODUCT_COUNT>
+        </MARK>
+    </MARK_LIST>
+    <POPULAR_CAT_LIST_COUNT>9</POPULAR_CAT_LIST_COUNT>
+    <POPULAR_CAT_LIST>
+        <CAT PLACE="1">
+            <CAT_ID_INTERNE>1170000</CAT_ID_INTERNE>
+            <CAT_ID>1080000</CAT_ID>
+            <CAT_NAME><![CDATA[Accessoires images-son]]></CAT_NAME>
+            <CAT_URL><![CDATA[/accessoires_images_son.htm]]></CAT_URL>
+            <PRODUCT_COUNT>68408</PRODUCT_COUNT>
+            <PROD_DBG_CLIC>6662</PROD_DBG_CLIC>
+        </CAT>
+        <CAT PLACE="2">
+            <CAT_ID_INTERNE>1170300</CAT_ID_INTERNE>
+            <CAT_ID>1061700</CAT_ID>
+            <CAT_NAME><![CDATA[Connectiques images et son]]></CAT_NAME>
+            <CAT_URL><![CDATA[/connectiques_images_et_son.htm]]></CAT_URL>
+            <PRODUCT_COUNT>20171</PRODUCT_COUNT>
+            <PROD_DBG_CLIC>10802</PROD_DBG_CLIC>
+        </CAT>
+        <CAT PLACE="3">
+            <CAT_ID_INTERNE>1170400</CAT_ID_INTERNE>
+            <CAT_ID>1060900</CAT_ID>
+            <CAT_NAME><![CDATA[Casques stéréo]]></CAT_NAME>
+            <CAT_URL><![CDATA[/casques_stereo.htm]]></CAT_URL>
+            <PRODUCT_COUNT>6118</PRODUCT_COUNT>
+            <PROD_DBG_CLIC>13421</PROD_DBG_CLIC>
+        </CAT>
+        <CAT PLACE="4">
+            <CAT_ID_INTERNE>1170200</CAT_ID_INTERNE>
+            <CAT_ID>1061500</CAT_ID>
+            <CAT_NAME><![CDATA[Microphones]]></CAT_NAME>
+            <CAT_URL><![CDATA[/microphones.htm]]></CAT_URL>
+            <PRODUCT_COUNT>4602</PRODUCT_COUNT>
+            <PROD_DBG_CLIC>9951</PROD_DBG_CLIC>
+        </CAT>
+        <CAT PLACE="5">
+            <CAT_ID_INTERNE>1170800</CAT_ID_INTERNE>
+            <CAT_ID>10000634</CAT_ID>
+            <CAT_NAME><![CDATA[Support mural]]></CAT_NAME>
+            <CAT_URL><![CDATA[/support_mural.htm]]></CAT_URL>
+            <PRODUCT_COUNT>2760</PRODUCT_COUNT>
+            <PROD_DBG_CLIC>12682</PROD_DBG_CLIC>
+        </CAT>
+        <CAT PLACE="6">
+            <CAT_ID_INTERNE>1170100</CAT_ID_INTERNE>
+            <CAT_ID>1061400</CAT_ID>
+            <CAT_NAME><![CDATA[Ecouteurs]]></CAT_NAME>
+            <CAT_URL><![CDATA[/ecouteurs.htm]]></CAT_URL>
+            <PRODUCT_COUNT>6934</PRODUCT_COUNT>
+            <PROD_DBG_CLIC>4672</PROD_DBG_CLIC>
+        </CAT>
+        <CAT PLACE="7">
+            <CAT_ID_INTERNE>1170500</CAT_ID_INTERNE>
+            <CAT_ID>1081300</CAT_ID>
+            <CAT_NAME><![CDATA[Télécommandes]]></CAT_NAME>
+            <CAT_URL><![CDATA[/telecommandes.htm]]></CAT_URL>
+            <PRODUCT_COUNT>1056</PRODUCT_COUNT>
+            <PROD_DBG_CLIC>14439</PROD_DBG_CLIC>
+        </CAT>
+        <CAT PLACE="8">
+            <CAT_ID_INTERNE>1170600</CAT_ID_INTERNE>
+            <CAT_ID>1080100</CAT_ID>
+            <CAT_NAME><![CDATA[Transmetteurs audio-vidéo]]></CAT_NAME>
+            <CAT_URL><![CDATA[/transmetteurs_audio_video.htm]]></CAT_URL>
+            <PRODUCT_COUNT>424</PRODUCT_COUNT>
+            <PROD_DBG_CLIC>18078</PROD_DBG_CLIC>
+        </CAT>
+        <CAT PLACE="9">
+            <CAT_ID_INTERNE>1170700</CAT_ID_INTERNE>
+            <CAT_ID>1062500</CAT_ID>
+            <CAT_NAME><![CDATA[Mégaphones]]></CAT_NAME>
+            <CAT_URL><![CDATA[/megaphones.htm]]></CAT_URL>
+            <PRODUCT_COUNT>75</PRODUCT_COUNT>
+            <PROD_DBG_CLIC>3548</PROD_DBG_CLIC>
+        </CAT>
+    </POPULAR_CAT_LIST>
+    <PRODUCT_LIST_COUNT>20</PRODUCT_LIST_COUNT>
+    <PRODUCT_LIST>
+        <PRODUCT PLACE="1">
+            <PROD_ID><![CDATA[2801111898]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Metronic]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>-1</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[D2-4]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170600</CAT_ID_INTERNE>
+            <CAT_ID>1080100</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Transmetteur audio-vidéo]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/transmetteurs_audio_video.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[8752]]></SHOPSITE_ID>
+            <SHOP_ID>28011118</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Maisonic]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>30.05</PROD_EURO_PRICE>
+            <PROD_EURO_FP>4.90</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.15</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>30.05</PROD_INTL_PRICE>
+            <PROD_INTL_FP>4.90</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[TV VIDEO]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[98]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[475361]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.maisonic.com/transmetteur-tv-audiovideo-sans-fils-source-p-98.html?ad=leguide15_98]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.maisonic.com/images/grandes/475361.png]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[METRONICTransmetteur TV audio/vidéo sans fils 1 source]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Transmetteur images et sons 1 source: - Sans fil - Noir laqué - Portée 40 mètres en vision directe Ce transmetteur vidéo permet de transmettre dune pièce à une autre, et sans fil, des images et du son dune qualité exceptionnelle. Vo...]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>30.05</PRICE_MIN>
+            <PRICE_MAX>30.05</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="2">
+            <PROD_ID><![CDATA[28003481257]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Marmitek]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>24</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>0</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170600</CAT_ID_INTERNE>
+            <CAT_ID>1080100</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Transmetteur audio-vidéo]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/transmetteurs_audio_video.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[4072]]></SHOPSITE_ID>
+            <SHOP_ID>28003481</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[IntelliHome]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4.2]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>149.95</PROD_EURO_PRICE>
+            <PROD_EURO_FP>0.00</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>-1</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>149.95</PROD_INTL_PRICE>
+            <PROD_INTL_FP>0.00</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Transmetteurs d'images sans fil]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[257]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.intellihome.be/francais/multimedia/transmetteurs_audio_video/tv_anywhere_transmetteur_antenne_tv_sans_fil_tuner_analogique__5_8_ghz]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.intellihome.be/userFiles/images/products/bigxbig/TV_Anywhere_5,8_ghz.jpg.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[TV AnyWhere 5.8 GHZ - Transmetteur Antenne TV Sans Fil]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Transmetteur antenne TV sans fil avec tuner TV intégré. Utilise la bande de fréquence 5.8 GHz pour éviter toute interférence et vous permettre de profiter complètement des images et son transmis dans toute la maison!]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>149.95</PRICE_MIN>
+            <PRICE_MAX>149.95</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="3">
+            <PROD_ID><![CDATA[2800830440904]]></PROD_ID>
+            <PROD_BASE_ID>52800628</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Philips]]></PROD_MARK>
+            <PROD_WITH_CARAC>1</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>-1</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[D2-5]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1110600</CAT_ID_INTERNE>
+            <CAT_ID>1030700</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Accessoire home cinema]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/accessoires_home_cinema.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[6641]]></SHOPSITE_ID>
+            <SHOP_ID>28008304</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[BUT]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[3.9]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>99.99</PROD_EURO_PRICE>
+            <PROD_EURO_FP>20.00</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>-1</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>99.99</PROD_INTL_PRICE>
+            <PROD_INTL_FP>20.00</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Tv - Son > Accessoires Tv/son/vidéo > Télécommandes Et Transmetteurs D'images]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[8712581468750]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[40904]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[SLV4200/12]]></PROD_REF>
+            <PROD_URL><![CDATA[http://tracking.lengow.com/shortUrl/61-1113-40904/]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.but.fr/produits/photos/l/87/8712581468750_F.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Transmetteur d'images PHILIPS SLV4200/12 2 sources 5,8 Ghz]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Type : Transmetteur d'images et son sans fil Fonctionnalités : permet de regarder vos sources (TNT, Canal, Satellite...) sur un second téléviseur Télécommande : non Nbre de sources connectables : 2 Type de port : péritel et 3 RCA Frequence d'émission : 5,8]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>3</OFFRE_COUNT>
+            <SHOP_COUNT>3</SHOP_COUNT>
+            <PRICE_MIN>87.00</PRICE_MIN>
+            <PRICE_MAX>99.99</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <OFFRE_LIST>
+                <OFFRE PLACE="1">
+                    <SHOP_ID>28007938</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[6445]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Discounteo]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[28007938philipsslv420012]]></PROD_ID>
+                    <OFFRE_PRICE>88.70</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1080100</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="2">
+                    <SHOP_ID>28008304</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[6641]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[BUT]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[2800830440904]]></PROD_ID>
+                    <OFFRE_PRICE>99.99</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1080100</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="3">
+                    <SHOP_ID>28009025</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[7065]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Ubaldi]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[2800902513377]]></PROD_ID>
+                    <OFFRE_PRICE>87.00</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1080000</CAT_ID>
+                </OFFRE>
+            </OFFRE_LIST>
+            <SHORTLINKS_COUNT>3</SHORTLINKS_COUNT>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="4">
+            <PROD_ID><![CDATA[28001132hz1765389]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Callstel]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>12</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[D2-4]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170400</CAT_ID_INTERNE>
+            <CAT_ID>1060900</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Casque stéréo]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/casques_stereo.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[2785]]></SHOPSITE_ID>
+            <SHOP_ID>28001132</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Pearl Diffusion]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4.1]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>19.90</PROD_EURO_PRICE>
+            <PROD_EURO_FP>3.99</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.01</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>19.90</PROD_INTL_PRICE>
+            <PROD_INTL_FP>3.99</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Multimédia > Audio > Casques et écouteurs > Casques sans fil]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[4022107116596]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[hz1765389]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.pearl.fr/article-HZ1765-389.html]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.pearl.fr/images/produits/grand/H/HZ1/HZ1765.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[MICRO CASQUE BLUETOOTH STEREO]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Profitez de la musique sans fil avec ce casque tour de cou qui vous suivra lors de vos activités sportives. Une simple pression sur un bouton vous per...]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>19.90</PRICE_MIN>
+            <PRICE_MAX>19.90</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="5">
+            <PROD_ID><![CDATA[28001079020205]]></PROD_ID>
+            <PROD_BASE_ID>3548380202050</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>12</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[D1]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170600</CAT_ID_INTERNE>
+            <CAT_ID>1080100</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Transmetteur audio-vidéo]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/transmetteurs_audio_video.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[2759]]></SHOPSITE_ID>
+            <SHOP_ID>28001079</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Abix]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[0]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>76.53</PROD_EURO_PRICE>
+            <PROD_EURO_FP>5.90</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>93.05</PROD_EURO_DISCOUNT>
+            <PROD_D3E>-2</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>76.53</PROD_INTL_PRICE>
+            <PROD_INTL_FP>5.90</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Audio Vidéo > Périphériques Vidéo > Convertisseurs vidéo capture]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[3548380202050]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[020205]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.abix.fr/redirect.asp?id=03&ccode=020205&par=leguide&cib=020205]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.abix.fr/prod/02/020205_2.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Boitier d'acquisition vidéo USB2.0]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[- Avis aux « collectionneurs » de vidéos analogiques et aux « accros » de la vidéo numérique, avec ce convertisseur, il est possible de transposer toutes les cassettes VHS sur simple CD ou DVD en temps réel !.. Petit mais très puissant, il se connecte sur]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>3</OFFRE_COUNT>
+            <SHOP_COUNT>3</SHOP_COUNT>
+            <PRICE_MIN>76.53</PRICE_MIN>
+            <PRICE_MAX>91.56</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <OFFRE_LIST>
+                <OFFRE PLACE="1">
+                    <SHOP_ID>28001079</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[2759]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Abix]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[28001079020205]]></PROD_ID>
+                    <OFFRE_PRICE>76.53</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1080100</CAT_ID>
+                </OFFRE>
+            </OFFRE_LIST>
+            <SHORTLINKS_COUNT>1</SHORTLINKS_COUNT>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="6">
+            <PROD_ID><![CDATA[280049656869]]></PROD_ID>
+            <PROD_BASE_ID>5412810132744</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Koenig]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>24</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[H24]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170500</CAT_ID_INTERNE>
+            <CAT_ID>1081300</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Télécommande]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/telecommandes.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[4855]]></SHOPSITE_ID>
+            <SHOP_ID>28004965</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Nierle Media Group]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[3.8]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>19.99</PROD_EURO_PRICE>
+            <PROD_EURO_FP>8.95</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>-1</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>19.99</PROD_INTL_PRICE>
+            <PROD_INTL_FP>8.95</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Multimedia>Télécommandes]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[5412810132744]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[6869]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.nierle.com/fr_85/article/6869/Koenig_Telecommande_pour_PC_Media_Center.html]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.peisch.de/_nierle_pic/6869t.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Koenig Télécommande pour PC Media Center]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Contrôlez votre Digital Entertainment!. Avec cette télécommande, façade en aluminium, vous contrôlez toutes les fonctions de votre PC par Microsoft Media Centre édition Software®. Avec 51 boutons (caoutchouc) LED.. Raccordement du récepteur sur Po...]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>3</OFFRE_COUNT>
+            <SHOP_COUNT>3</SHOP_COUNT>
+            <PRICE_MIN>19.99</PRICE_MIN>
+            <PRICE_MAX>29.90</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <OFFRE_LIST>
+                <OFFRE PLACE="1">
+                    <SHOP_ID>508</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[2134]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Ldlc.com]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[00000508ar201006040046]]></PROD_ID>
+                    <OFFRE_PRICE>29.90</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1081300</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="2">
+                    <SHOP_ID>28004965</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[4855]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Nierle Media Group]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[280049656869]]></PROD_ID>
+                    <OFFRE_PRICE>19.99</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1081300</CAT_ID>
+                </OFFRE>
+            </OFFRE_LIST>
+            <SHORTLINKS_COUNT>2</SHORTLINKS_COUNT>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="7">
+            <PROD_ID><![CDATA[28027119176]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Konig]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>-1</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>0</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[hors stock]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[D6-8]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170700</CAT_ID_INTERNE>
+            <CAT_ID>1062500</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Mégaphone]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/megaphones.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[65763]]></SHOPSITE_ID>
+            <SHOP_ID>28027119</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Passelec]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4.1]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>48.00</PROD_EURO_PRICE>
+            <PROD_EURO_FP>5.50</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.00</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>48.00</PROD_INTL_PRICE>
+            <PROD_INTL_FP>5.50</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Mégaphones]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[176]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[HQ-MEGAPHONE31]]></PROD_REF>
+            <PROD_URL><![CDATA[http://tracking.lengow.com/shortUrl/316-4166-176/]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.espacemarchand.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/h/q/hq-megaphone30.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Mégaphone / porte voix 25W-Konig]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Mégaphone 25 W en ABS avec sirène intégrée, volume réglable et microphone détachable. L'amplificateur de 25 W s`assure que vous serez entendu à plus de 600 m.]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>48.00</PRICE_MIN>
+            <PRICE_MAX>48.00</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="8">
+            <PROD_ID><![CDATA[0001188135049862]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>12</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[D3]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170600</CAT_ID_INTERNE>
+            <CAT_ID>1080100</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Transmetteur audio-vidéo]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/transmetteurs_audio_video.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[678]]></SHOPSITE_ID>
+            <SHOP_ID>11881</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Conrad Electronic]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>69.00</PROD_EURO_PRICE>
+            <PROD_EURO_FP>6.99</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>-1</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>69.00</PROD_INTL_PRICE>
+            <PROD_INTL_FP>6.99</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Multimédia>Adaptateurs, câbles>Répartiteurs et commutateurs AV>Systèmes de transmission audio/vidéo sans fil]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[4016138204575]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[35049862]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[350498-62]]></PROD_REF>
+            <PROD_URL><![CDATA[http://tracking.lengow.com/shortUrl/390-5450-35049862/]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.order.conrad.com/M/3000_3999/3500/3500/3504/350498_LB_00_FB.EPS.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Transmetteur sans fil AV]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Transmission sans fil de signaux d'images ou de sons jusqu'à 30 m dans la maison et 80 m à l'air libre. Qu'il s'agisse d'un récepteur satellite, d'un lecteur DVD, d'un caméscope ou d'un lecteur CD, vous pourrez apprécier où vous le voulez une vidéo, un]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>69.00</PRICE_MIN>
+            <PRICE_MAX>69.00</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="9">
+            <PROD_ID><![CDATA[280240283028457]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Canal Satellite]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>-1</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>0</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>0</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170500</CAT_ID_INTERNE>
+            <CAT_ID>1081300</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Télécommande]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/telecommandes.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[56583]]></SHOPSITE_ID>
+            <SHOP_ID>28024028</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Sud SAV]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[3.9]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>13.90</PROD_EURO_PRICE>
+            <PROD_EURO_FP>-1</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.00</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>13.90</PROD_INTL_PRICE>
+            <PROD_INTL_FP>-1</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Télécommandes pour Canal satellite]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[3028457]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.sudsav.com/PBSCProduct.asp?PGFLngID=0&ItmID=3407866]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.sudsav.com/Files/20699/Img/05/3028457.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[télécommande canal + / canalsat mediamax]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Télécommande d'origine pour CANAL + / CANALSAT MEDIAMAX . REF : 3028457]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>13.90</PRICE_MIN>
+            <PRICE_MAX>13.90</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="10">
+            <PROD_ID><![CDATA[2902318238946]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>24</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[D2]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170800</CAT_ID_INTERNE>
+            <CAT_ID>10000634</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Support mural]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/support_mural.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[29023182]]></SHOPSITE_ID>
+            <SHOP_ID>29023182</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Proconnectic]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[3.6]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[0]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>89.00</PROD_EURO_PRICE>
+            <PROD_EURO_FP>9.90</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.00</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>89.00</PROD_INTL_PRICE>
+            <PROD_INTL_FP>9.90</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Support mural]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[38946]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.proconnectic.com/support-fixation-mural/support-mural-pivotant-et-inclinable-ecran-lcd-plasma-led-de-30-a-50-pouces/product_info.php/cPath/23/products_id/116]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.proconnectic.com/compte/zjjp-proconnectic-votreboutiquepro-com/images//Support/support-mural-pivotant-inclinable-articule.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Support mural pivotant et inclinable écran plat]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Support mural pivotant et inclinable écran LCD Plasma LED de 30 à 50 pouces.Support mural idéal pour le montage dans un coin. Inclinable jusquà 15 ° et pivotant jusqu'à 90° grâce à son bras articulé. Installation tres facile.Niveau à bulle]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>89.00</PRICE_MIN>
+            <PRICE_MAX>89.00</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="11">
+            <PROD_ID><![CDATA[290108824355]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>-1</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>0</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>0</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170300</CAT_ID_INTERNE>
+            <CAT_ID>1061700</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Connectique image et son]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/connectiques_images_et_son.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[29010882]]></SHOPSITE_ID>
+            <SHOP_ID>29010882</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Opirata France]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[3.7]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[0]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>3.53</PROD_EURO_PRICE>
+            <PROD_EURO_FP>-1</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>-1</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>3.53</PROD_INTL_PRICE>
+            <PROD_INTL_FP>-1</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Toslink]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[4355]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[MAK3341]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.opirata.com/product_info.php?products_id=4355]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.opirata.com/images/MAKOptCbl-a.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Optical Digital Audio Cable (Toslink) 1m]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Câble Audio Optique Numérique « Toslink » Connectez numériquement et transmettez l'audio depuis des téléviseurs, amplificateurs, récepteurs satellite, lecteurs DVD, Blu-Ray, consoles de jeux et d'autres, à des amplificateur...]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>3.53</PRICE_MIN>
+            <PRICE_MAX>3.53</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="12">
+            <PROD_ID><![CDATA[28003415gz611]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Meliconi]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>60</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>0</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[Article expédié sous 1 semaine(s)]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>0</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170800</CAT_ID_INTERNE>
+            <CAT_ID>10000634</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Support mural]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/support_mural.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[4004]]></SHOPSITE_ID>
+            <SHOP_ID>28003415</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[La Maison de Valérie]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4.3]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>34.96</PROD_EURO_PRICE>
+            <PROD_EURO_FP>7.90</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.00</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>34.96</PROD_INTL_PRICE>
+            <PROD_INTL_FP>7.90</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Accessoires vidéo]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[gz611]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[GZ611]]></PROD_REF>
+            <PROD_URL><![CDATA[http://tracking.lengow.com/shortUrl/47-594-GZ611/]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.lamaisondevalerie.fr/img/produits/GZ611_z.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Support mural TV LCD 30kg]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Support mural orientable et inclinable pour téléviseurs LCD ou Plasma de 58 à 102 cm.Norme daccroche murale VESA 75/100/200.]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>34.96</PRICE_MIN>
+            <PRICE_MAX>34.96</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="13">
+            <PROD_ID><![CDATA[2800902515233]]></PROD_ID>
+            <PROD_BASE_ID>56288540</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Philips]]></PROD_MARK>
+            <PROD_WITH_CARAC>1</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>12</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[D2]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1060000</CAT_ID_INTERNE>
+            <CAT_ID>1070000</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Baladeur]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/baladeurs.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[7065]]></SHOPSITE_ID>
+            <SHOP_ID>28009025</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Ubaldi]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4.4]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>85.00</PROD_EURO_PRICE>
+            <PROD_EURO_FP>0.00</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.10</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>85.00</PROD_INTL_PRICE>
+            <PROD_INTL_FP>0.00</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Lecteur MP3 - MP4]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[8712581533045]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[15233]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[SA2ARA08K Ariaz]]></PROD_REF>
+            <PROD_URL><![CDATA[http://logi141.xiti.com/gopc.url?xts=328406&xtor=ADC-9&url=http://www.ubaldi.com/son/lecteur-mp3-mp4/philips/lecteur-mp3-mp4-philips--ariaz-8-go.php]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.ubaldi.com/visuels/15233/15233_200_panier.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Ariaz 8 Go - PHILIPS - Lecteur MP3 / MP4]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Le Ariaz est un lecteur MP4 PHILIPS. Entrez dans la dimension GoGear Ariaz! Équipé du FullSound et vendu avec ses écouteurs dotés de la technologie de réduction du bruit, ce baladeur vous offrira une qualité d'écoute exceptionnelle, où que vous soyez.]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>12</OFFRE_COUNT>
+            <SHOP_COUNT>12</SHOP_COUNT>
+            <PRICE_MIN>79.10</PRICE_MIN>
+            <PRICE_MAX>121.50</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <OFFRE_LIST>
+                <OFFRE PLACE="1">
+                    <SHOP_ID>59</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[2483]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[3 Suisses]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[0000005974189]]></PROD_ID>
+                    <OFFRE_PRICE>99.90</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1070500</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="2">
+                    <SHOP_ID>28009589</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[2325]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Amazon MarketPlace]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[28009589b003g3w8sk]]></PROD_ID>
+                    <OFFRE_PRICE>95.14</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>7050505</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="3">
+                    <SHOP_ID>28009025</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[7065]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Ubaldi]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[2800902515233]]></PROD_ID>
+                    <OFFRE_PRICE>85.00</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>10000675</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="4">
+                    <SHOP_ID>28007938</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[6445]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Discounteo]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[28007938philipssa2ara08k02]]></PROD_ID>
+                    <OFFRE_PRICE>79.10</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>10000675</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="5">
+                    <SHOP_ID>884</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[2396]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Pixmania France]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[0000088406306663]]></PROD_ID>
+                    <OFFRE_PRICE>88.90</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1060900</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="6">
+                    <SHOP_ID>29012097</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[29012097]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Redcoon]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[29012097b226463]]></PROD_ID>
+                    <OFFRE_PRICE>85.00</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>10000675</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="7">
+                    <SHOP_ID>635</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[2322]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Amazon.fr]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[00000635b003g3w8sk]]></PROD_ID>
+                    <OFFRE_PRICE>79.90</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>7050505</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="8">
+                    <SHOP_ID>248</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[2094]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[La Redoute]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[00000248324189512]]></PROD_ID>
+                    <OFFRE_PRICE>99.90</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1070500</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="9">
+                    <SHOP_ID>164</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[2138]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[FNAC]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[000001642845994]]></PROD_ID>
+                    <OFFRE_PRICE>79.90</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>10000675</CAT_ID>
+                </OFFRE>
+                <OFFRE PLACE="10">
+                    <SHOP_ID>526</SHOP_ID>
+                    <SHOPSITE_ID><![CDATA[2159]]></SHOPSITE_ID>
+                    <SHOP_LOGO>1</SHOP_LOGO>
+                    <SHOP_NAME><![CDATA[Darty]]></SHOP_NAME>
+                    <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+                    <PROD_ID><![CDATA[000005263212882]]></PROD_ID>
+                    <OFFRE_PRICE>99.99</OFFRE_PRICE>
+                    <PROD_SOLDE>0</PROD_SOLDE>
+                    <CAT_ID>1070500</CAT_ID>
+                </OFFRE>
+            </OFFRE_LIST>
+            <SHORTLINKS_COUNT>10</SHORTLINKS_COUNT>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="14">
+            <PROD_ID><![CDATA[28001450a1908]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Watch Tv]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>-1</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>0</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>0</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170800</CAT_ID_INTERNE>
+            <CAT_ID>10000634</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Support mural]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/support_mural.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[2945]]></SHOPSITE_ID>
+            <SHOP_ID>28001450</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Technoconfort]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[3.9]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>32.03</PROD_EURO_PRICE>
+            <PROD_EURO_FP>11.84</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.00</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>32.03</PROD_INTL_PRICE>
+            <PROD_INTL_FP>11.84</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Support mural]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[a1908]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[EasyThree]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.technoconfort.com/ficheaccess.php?num=1908&orgn=gw]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.technoconfort.com/photo_access/1908a_1.voc]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Support mural pour écran LCD]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Poids max. écran:20 Kg, VESA:50 / 75 / 100 / 200x100, Entraxe horizontal:200 mm, Entraxe vertical:100 mm.]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>32.03</PRICE_MIN>
+            <PRICE_MAX>32.03</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="15">
+            <PROD_ID><![CDATA[290083257996]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Philips]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>-1</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>0</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>0</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170600</CAT_ID_INTERNE>
+            <CAT_ID>1080100</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Transmetteur audio-vidéo]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/transmetteurs_audio_video.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[29008325]]></SHOPSITE_ID>
+            <SHOP_ID>29008325</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Speeder]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4.2]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[0]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>85.00</PROD_EURO_PRICE>
+            <PROD_EURO_FP>0.00</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>94.90</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.00</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>85.00</PROD_INTL_PRICE>
+            <PROD_INTL_FP>0.00</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[-TV-Accessoires-Transmetteur vidéo sans fil]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[7996]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[SLV4200]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.speeder.fr/accessoires/7996/achat-vente-transmetteur-video-sans-fil-transmetteur-video-philips-slv4200?utm_source=comparateur&utm_medium=comparateur&utm_campaign=leguide]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.speeder.fr/uploads/medias/126c0c8d2a7660f0e577ced41be28719af6e5b26.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Transmetteur video SLV4200]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Le SLV4200 est un transmetteur audio vidéo sans fil Philips. Partagez vos chaînes TV satellite ou payantes sans aucun câble avec cet appareil qui vous permettra de regarder vos émissions TV sur un second téléviseur grâce à la technologie sans fil.]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>85.00</PRICE_MIN>
+            <PRICE_MAX>85.00</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="16">
+            <PROD_ID><![CDATA[29004202telwalcm103]]></PROD_ID>
+            <PROD_BASE_ID>29582754</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Wallis]]></PROD_MARK>
+            <PROD_WITH_CARAC>1</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>0</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[H24-48]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170500</CAT_ID_INTERNE>
+            <CAT_ID>1081300</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Télécommande]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/telecommandes.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[29004202]]></SHOPSITE_ID>
+            <SHOP_ID>29004202</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[AFG Distribution]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[0]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>29.99</PROD_EURO_PRICE>
+            <PROD_EURO_FP>-1</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>39.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>-1</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>29.99</PROD_INTL_PRICE>
+            <PROD_INTL_FP>-1</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Télécommandes>Télécommandes]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[telwalcm103]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[CM 103]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.afg-distribution.fr/telecommande-universelle-wallis-cm103.html]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.afg-distribution.fr/media/catalog/product/c/m/cm103.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Télécommande Universelle Wallis CM103]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>29.99</PRICE_MIN>
+            <PRICE_MAX>29.99</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="17">
+            <PROD_ID><![CDATA[29018372359]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Magicon]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>0</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[D1]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170100</CAT_ID_INTERNE>
+            <CAT_ID>1061400</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Ecouteur]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/ecouteurs.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[29018372]]></SHOPSITE_ID>
+            <SHOP_ID>29018372</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Mp3-discount.fr]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[3.8]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[0]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>3.50</PROD_EURO_PRICE>
+            <PROD_EURO_FP>3.70</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>3.90</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.00</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>3.50</PROD_INTL_PRICE>
+            <PROD_INTL_FP>3.70</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Photo, vidéo et son > Accessoire image et son > Casque et écouteurs]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[359]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[]]></PROD_REF>
+            <PROD_URL><![CDATA[http://www.mp3-discount.fr/ecouteurs/ecouteurs-compatible-pour-iphone-3gs-ipod-touch-ipod-classic-ipod-nano-ipod-shuffle.html?utm_source=leguide&utm_medium=cpc&utm_campaign=leguide-wizi]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.mp3-discount.fr/_i/3305/earphone-casque-microphone-ecouteurs-1269842996.jpeg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[ECOUTEURS COMPATIBLE POUR iPhone 3GS, iPod touch, iPod classic, iPod nano, iPod shuffle]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[ÉCOUTEUR DE TRÈS BONNE QUALITÉ DE 3.5mm DESIGN ET CONFORTABLE POUR VOS APPAREILS SON ET VIDÉO (MP3/MP4, PC, IPOD, TÉLÉPHONE... etc) DESCRIPTION: 1.ÉCOUTEUR STÉRÉO 3.5mm 2. DIAPHRAGME 10mm 3....]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>3.50</PRICE_MIN>
+            <PRICE_MAX>3.50</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="18">
+            <PROD_ID><![CDATA[0000005994155]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Sony]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>-1</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>0</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170400</CAT_ID_INTERNE>
+            <CAT_ID>1060900</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Casque stéréo]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/casques_stereo.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[2483]]></SHOPSITE_ID>
+            <SHOP_ID>59</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[3 Suisses]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[3.8]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>49.90</PROD_EURO_PRICE>
+            <PROD_EURO_FP>5.95</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.01</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>49.90</PROD_INTL_PRICE>
+            <PROD_INTL_FP>5.95</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[1080000]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[94155]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[]]></PROD_REF>
+            <PROD_URL><![CDATA[http://clk.tradedoubler.com/click?p=59687&a=1418609&g=0&epi=High%20Tech_Tous%20les%20articles&epi2=94155&url=http://www.3suisses.fr/FrontOfficePortail/catalogue_fra/high-tech/image-et-son/casque-mini-enceinte/tous-les-articles/casque-sans-fil-bluetooth-sony-dr-bt101b/94155-casque-sans-fil-bluetooth-sony-dr-bt101b.html?xtor=ADC-4087]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.3suisses.fr/portail3s_img/3S/FRA/produits/vis_prin/9/4/1/5/94155.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Casque sans fil Bluetooth Sony DR-BT101b]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Coloris : Unique / Taille : Unique. - Casque design Bluetooth® - Derniere version Bluetooth version 2.1 + EDR, pour un pairage facilite avec le peripherique - Ideal pour telephone portable et lecteur mp3 Bluetooth® - Fonction KIT main-libre (HFP/HSP) - Com]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>49.90</PRICE_MIN>
+            <PRICE_MAX>49.90</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="19">
+            <PROD_ID><![CDATA[000005261182978]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Monster Cable]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>12</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>0</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170000</CAT_ID_INTERNE>
+            <CAT_ID>1080000</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Accessoire image-son]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/accessoires_images_son.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[2159]]></SHOPSITE_ID>
+            <SHOP_ID>526</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Darty]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[4.4]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>39.90</PROD_EURO_PRICE>
+            <PROD_EURO_FP>0.00</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.00</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>39.90</PROD_INTL_PRICE>
+            <PROD_INTL_FP>0.00</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Accessoire pour téléviseur]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[0050644513497]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[1182978]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[1182978]]></PROD_REF>
+            <PROD_URL><![CDATA[http://tracking.lengow.com/shortUrl/440-5874-1182978/]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.darty.com/wcsstore/Darty/fr_FR/images/product/principal/P1182978A.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[Accessoire pour support TV MONSTER CABLE Cache Fil FS MGMT4EU]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Cache câbles / Discret]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>39.90</PRICE_MIN>
+            <PRICE_MAX>39.90</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+        <PRODUCT PLACE="20">
+            <PROD_ID><![CDATA[0000093079508]]></PROD_ID>
+            <PROD_BASE_ID>0</PROD_BASE_ID>
+            <PROD_MARK><![CDATA[Beewi]]></PROD_MARK>
+            <PROD_WITH_CARAC>0</PROD_WITH_CARAC>
+            <PROD_MASQUE>0</PROD_MASQUE>
+            <PROD_GARANTIE>-1</PROD_GARANTIE>
+            <PROD_DISPO_FORMAT>1</PROD_DISPO_FORMAT>
+            <PROD_DISPO_VALUE><![CDATA[D0]]></PROD_DISPO_VALUE>
+            <PROD_DELIVERY_FORMAT>1</PROD_DELIVERY_FORMAT>
+            <PROD_DELIVERY_VALUE><![CDATA[H48]]></PROD_DELIVERY_VALUE>
+            <PROD_OCCASION>0</PROD_OCCASION>
+            <PROD_SOLDE>0</PROD_SOLDE>
+            <CAT_ID_INTERNE>1170400</CAT_ID_INTERNE>
+            <CAT_ID>1060900</CAT_ID>
+            <CAT_SINGLE_NAME><![CDATA[Casque stéréo]]></CAT_SINGLE_NAME>
+            <CAT_URL><![CDATA[/casques_stereo.htm]]></CAT_URL>
+            <SHOPSITE_ID><![CDATA[2440]]></SHOPSITE_ID>
+            <SHOP_ID>930</SHOP_ID>
+            <SHOP_VARS><![CDATA[tc:p]]></SHOP_VARS>
+            <SHOP_LOGO>1</SHOP_LOGO>
+            <SHOP_NAME><![CDATA[Internity]]></SHOP_NAME>
+            <SHOP_GLOBAL><![CDATA[3.9]]></SHOP_GLOBAL>
+            <SHOP_MEDIATION><![CDATA[-1]]></SHOP_MEDIATION>
+            <SHOP_PAYS><![CDATA[FR]]></SHOP_PAYS>
+            <SHOP_LABEL_VALID><![CDATA[0]]></SHOP_LABEL_VALID>
+            <SHOP_LABEL_DEBUT><![CDATA[]]></SHOP_LABEL_DEBUT>
+            <SHOP_LABEL_FIN><![CDATA[]]></SHOP_LABEL_FIN>
+            <PROD_EURO_PRICE>59.90</PROD_EURO_PRICE>
+            <PROD_EURO_FP>4.50</PROD_EURO_FP>
+            <PROD_EURO_DISCOUNT>0.00</PROD_EURO_DISCOUNT>
+            <PROD_D3E>0.01</PROD_D3E>
+            <PROD_INTL_DEVISE><![CDATA[EUR]]></PROD_INTL_DEVISE>
+            <PROD_INTL_PRICE>59.90</PROD_INTL_PRICE>
+            <PROD_INTL_FP>4.50</PROD_INTL_FP>
+            <PROD_CAT_SHOP><![CDATA[Hi-fi, Photo & Vidéo > Accessoires images-son]]></PROD_CAT_SHOP>
+            <PROD_ALPHA1><![CDATA[]]></PROD_ALPHA1>
+            <PROD_ALPHA2><![CDATA[]]></PROD_ALPHA2>
+            <PROD_EAN13><![CDATA[3492548056637]]></PROD_EAN13>
+            <PROD_REF_INTERNE><![CDATA[79508]]></PROD_REF_INTERNE>
+            <PROD_REF><![CDATA[]]></PROD_REF>
+            <PROD_URL><![CDATA[http://qua.eulerian.net/dynclick/Internity/?etf-name=leguide&etf-prdref=79508&eurl=http://www.internity.fr/F-1153-casques-et-ecouteurs/P-291723-beewi--bbh200_a0]]></PROD_URL>
+            <PROD_IMG><![CDATA[<70x70>http://www.internity.fr/images/ZOOM/beewi_casque_bt_291723.jpg]]></PROD_IMG>
+            <PROD_DESIGNATION><![CDATA[BeeWi BBH200-A0]]></PROD_DESIGNATION>
+            <PROD_DESCRIPTION><![CDATA[Le casque stéreo Bluetooth : au de&#8208;là de toutes vos attentes À la maison, au bureau ou sur la route, écoutez votre musique en qualité stéréo avec le casque sans fil Beewi. Léger et confortable, ce casque Bluetooth offre une qualité de son excep]]></PROD_DESCRIPTION>
+            <PROD_EXTRAS><![CDATA[]]></PROD_EXTRAS>
+            <OFFRE_COUNT>1</OFFRE_COUNT>
+            <SHOP_COUNT>1</SHOP_COUNT>
+            <PRICE_MIN>59.90</PRICE_MIN>
+            <PRICE_MAX>59.90</PRICE_MAX>
+            <GROUP_SOLDE>0</GROUP_SOLDE>
+            <WORD_LIST/>
+        </PRODUCT>
+    </PRODUCT_LIST>
+    <UNIVERS_LIST_COUNT>0</UNIVERS_LIST_COUNT>
+    <UNIVERS_LIST/>
+</RESULTAT>
+

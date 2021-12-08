@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "/WEB-INF/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="true">
+    <!-- Log4j configuration -->
+    <appender name="loggerDailyAppender" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+        <param name="File" value="./logs/services/email.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{ABSOLUTE}] [%5p] %c:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-5p [%c][%t] %m%n"/>
+        </layout>
+    </appender>
+
+    <logger name="org.springframework" additivity="false">
+        <level value="info" />
+        <appender-ref ref="loggerDailyAppender" />
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <logger name="org.apache" additivity="false">
+        <level value="info" />
+        <appender-ref ref="loggerDailyAppender" />
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <logger name="com.leguide.backoffice.karaf" additivity="false">
+        <level value="info" />
+        <appender-ref ref="loggerDailyAppender" />
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <root>
+        <priority value = "debug" />
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="loggerDailyAppender" />
+    </root>
+</log4j:configuration>

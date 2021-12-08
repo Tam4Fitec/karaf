@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>com.leguide.backoffice.karaf.bundle</groupId>
+      <artifactId>bundle-parent</artifactId>
+      <version>19.21.2</version>
+   </parent>
+
+   <groupId>com.leguide.backoffice.karaf.bundle.business</groupId>
+   <artifactId>parent</artifactId>
+   <packaging>pom</packaging>
+
+   <name>${application.name} :: ${project.name} :: ${project.artifactId}</name>
+   <description>Bundles Business</description>
+
+   <modules>
+      <module>models</module>
+      <module>contact</module>
+      <module>models-marshalling</module>
+      <module>catalog.offercount</module>
+   </modules>
+
+   <dependencies>
+      <!-- logging -->
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-api</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-log4j12</artifactId>
+      </dependency>
+      <dependency>
+         <groupId>log4j</groupId>
+         <artifactId>log4j</artifactId>
+      </dependency>
+   </dependencies>
+
+   <properties>
+      <project.name>business</project.name>
+      <build-helper-maven-plugin.skipAttach.configuration>false</build-helper-maven-plugin.skipAttach.configuration>
+   </properties>
+
+</project>

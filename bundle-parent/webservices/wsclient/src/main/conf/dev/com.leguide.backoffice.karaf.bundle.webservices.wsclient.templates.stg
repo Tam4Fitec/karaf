@@ -1,0 +1,552 @@
+alertconsumption_fr(url,maximumAmount,month,email) ::= <<
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="color: #fff;font-family: arial">
+
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700" style="background: #2a3079;color: #fff; font-family: arial;border: 1px solid #ccc;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff;padding:15px 0 5px;">
+                        <img border="0" width="125" height="40" src="http://marchands.leguide.com/public/img/logos/logo_leguide_group_header.png" alt="LeGuide.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="background: #2a3079;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;font-size: 14px;" align="left" valign="top" >
+                        <div style="padding: 25px 50px 35px;color:#fff;"><b>Bonjour,</b><br><br>Votre demande d’augmentation de plafond pour le site <a href="$url$" style="color:#FFFFFF;">$url$</a> a bien été prise en compte.
+                            <ul>
+                                <li>Votre nouveau plafond est de: $maximumAmount$€</li>
+                                <li>Ce plafond est valable pour le mois: $month$</li>
+                                <li>Cette modification a été effectuée par: <a href="mailto:$email$" style="color:#FFFFFF;">$email$</a></li>
+                            </ul>
+                            Nous vous remercions pour votre confiance.
+                            <br>
+                            Votre plafond contractuel initial sera automatiquement rétabli le mois prochain.
+                            <br><br>
+                            Cordialement,
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div style="padding:40px 0 60px; font-size: 12px;"><b>Service Clients</b> - 12, rue Godot de Mauroy - 75009 Paris - France - Fax : +33  (01) 75 44 56 02</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff; padding: 10px 0;">
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/leguide-small.png" alt="pikengo"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/ciao-small.png" alt="ciao"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/choozen-small.png" alt="choozen"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/webmarchand-small.png" alt="webmarchand"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+>>
+alertconsumption_en(url,maximumAmount,month,email) ::= <<
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="color: #fff;font-family: arial">
+
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700" style="background: #2a3079;color: #fff; font-family: arial;border: 1px solid #ccc;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff;padding:15px 0 5px;">
+                        <img border="0" width="125" height="40" src="http://marchands.leguide.com/public/img/logos/logo_leguide_group_header.png" alt="LeGuide.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="background: #2a3079;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;font-size: 14px;" align="left" valign="top" >
+                        <div style="padding: 25px 50px 35px;color:#fff;"><b>Dear all,</b><br><br>Your request for budget increase for the website <a href="$url$" style="color:#FFFFFF;">$url$</a> has been processed.
+                            <ul>
+                                <li>The new cap amount is: $maximumAmount$€</li>
+                                <li>This amount is valid for: $month$</li>
+                                <li>The request has been raised by: <a href="mailto:$email$" style="color:#FFFFFF;">$email$</a></li>
+                            </ul>
+                            We thank you for your confidence.
+                            <br>
+                            Your former budget cap will be automatically reinitialized for the nexts months.
+                            <br><br>
+                            Regards,
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div style="padding:40px 0 60px; font-size: 12px;"><b>Service Clients</b> - 12, rue Godot de Mauroy - 75009 Paris - France - Fax : +33  (01) 75 44 56 02</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff; padding: 10px 0;">
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/ciao-small.png" alt="ciao"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/dooyoo-small.png" alt="dooyoo"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/pricesavvy-small.png" alt="pricesavvy"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/choozen-small.png" alt="choozen"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+>>
+alertconsumption_nl(url,maximumAmount,month,email) ::= <<
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="color: #fff;font-family: arial">
+
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700" style="background: #2a3079;color: #fff; font-family: arial;border: 1px solid #ccc;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff;padding:15px 0 5px;">
+                        <img border="0" width="125" height="40" src="http://marchands.leguide.com/public/img/logos/logo_leguide_group_header.png" alt="LeGuide.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="background: #2a3079;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;font-size: 14px;" align="left" valign="top" >
+                        <div style="padding: 25px 50px 35px;color:#fff;"><b>Goedendag,</b><br><br>Uw aanvraag voor de verhoging van uw plafond voor de website <a href="$url$" style="color:#FFFFFF;">$url$</a> is goed geregistreerd.
+                            <ul>
+                                <li>Uw nieuwe plafond bedraagt: $maximumAmount$€</li>
+                                <li>Dit plafond is geldig voor de maand: $month$</li>
+                                <li>Deze wijziging werd uitgevoerd door: <a href="mailto:$email$" style="color:#FFFFFF;">$email$</a></li>
+                            </ul>
+                            Wij danken u voor uw vertrouwen.
+                            <br>
+                            De volgende maand zal uw plafond automatisch teruggevoerd worden naar uw initiële contract.
+                            <br><br>
+                            Met vriendelijke groet,
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div style="padding:40px 0 60px; font-size: 12px;"><b>Service Clients</b> - 12, rue Godot de Mauroy - 75009 Paris - France - Fax : +33  (01) 75 44 56 02</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff; padding: 10px 0;">
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/ciao-small.png" alt="ciao"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/koopkeus-small.png" alt="koopkeus"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/choozen-small.png" alt="choozen"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+>>
+alertconsumption_de(url,maximumAmount,month,email) ::= <<
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="color: #fff;font-family: arial">
+
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700" style="background: #2a3079;color: #fff; font-family: arial;border: 1px solid #ccc;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff;padding:15px 0 5px;">
+                        <img border="0" width="125" height="40" src="http://marchands.leguide.com/public/img/logos/logo_leguide_group_header.png" alt="LeGuide.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="background: #2a3079;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;font-size: 14px;" align="left" valign="top" >
+                        <div style="padding: 25px 50px 35px;color:#fff;"><b>Guten Tag,</b><br><br>Ihre Anfrage zur Budgeterhöhung für den Shop <a href="$url$" style="color:#FFFFFF;">$url$</a> wurde erfolgreich registriert.
+                            <ul>
+                                <li>Ihr neues Budget beträgt: $maximumAmount$€</li>
+                                <li>Dieses Budget gilt für den Monat: $month$</li>
+                                <li>Diese Änderung wurde durchgeführt von : <a href="mailto:$email$" style="color:#FFFFFF;">$email$</a></li>
+                            </ul>
+                            Wir danken Ihnen für Ihr Vertrauen.
+                            <br>
+                            Ihr vertraglich festgelegtes Anfangsbudget tritt im Folgemonat automatisch wieder in Kraft.
+                            <br><br>
+                            Mit freundlichen Grüßen
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div style="padding:40px 0 60px; font-size: 12px;"><b>Service Clients</b> - 12, rue Godot de Mauroy - 75009 Paris - France - Fax : +33  (01) 75 44 56 02</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff; padding: 10px 0;">
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/ciao-small.png" alt="ciao"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/pikengo-small.png" alt="pikengo"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/dooyoo-small.png" alt="dooyoo"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/shopwahl-small.png" alt="shopwahl"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/choozen-small.png" alt="choozen"></a></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+>>
+alertconsumption_it(url,maximumAmount,month,email) ::= <<
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="color: #fff;font-family: arial">
+
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700" style="background: #2a3079;color: #fff; font-family: arial;border: 1px solid #ccc;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff;padding:15px 0 5px;">
+                        <img border="0" width="125" height="40" src="http://marchands.leguide.com/public/img/logos/logo_leguide_group_header.png" alt="LeGuide.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="background: #2a3079;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;font-size: 14px;" align="left" valign="top" >
+                        <div style="padding: 25px 50px 35px;color:#fff;"><b>Salve,</b><br><br>La sua richiesta di aumento del tetto massimale per il sito <a href="$url$" style="color:#FFFFFF;">$url$</a> è stata validata.
+                            <ul>
+                                <li>Il suo nuovo tetto massimale è di: $maximumAmount$€</li>
+                                <li>Questo tetto massimale è valido per il mese di: $month$</li>
+                                <li>Questa modifica è stata effettuata per: <a href="mailto:$email$" style="color:#FFFFFF;">$email$</a></li>
+                            </ul>
+                            La ringraziamo per la fiducia accordataci.
+                            <br>
+                            Il suo tetto massimale iniziale sarà automaticamente ripristinato il mese prossimo.
+                            <br><br>
+                            Cordialemente,
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div style="padding:40px 0 60px; font-size: 12px;"><b>Service Clients</b> - 12, rue Godot de Mauroy - 75009 Paris - France - Fax : +33  (01) 75 44 56 02</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff; padding: 10px 0;">
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/ciao-small.png" alt="ciao"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/pikengo-small.png" alt="pikengo"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/dooyoo-small.png" alt="dooyoo"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/pagineprezzi-small.png" alt="pagineprezzi"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/choozen-small.png" alt="choozen"></a></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+>>
+alertconsumption_pl(url,maximumAmount,month,email) ::= <<
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="color: #fff;font-family: arial">
+
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700" style="background: #2a3079;color: #fff; font-family: arial;border: 1px solid #ccc;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff;padding:15px 0 5px;">
+                        <img border="0" width="125" height="40" src="http://marchands.leguide.com/public/img/logos/logo_leguide_group_header.png" alt="LeGuide.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="background: #2a3079;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;font-size: 14px;" align="left" valign="top" >
+                        <div style="padding: 25px 50px 35px;color:#fff;"><b>Witamy,</b><br><br>Państwa prośba o podniesienie progu budżetowego dla strony <a href="$url$" style="color:#FFFFFF;">$url$</a> została wzięta pod uwagę.
+                            <ul>
+                                <li>Państwa  nowy  próg budżetowy wynosi : $maximumAmount$€</li>
+                                <li>Ten próg budżetowy jest ważny na miesiąc : $month$</li>
+                                <li>Zmiana ta została wprowadzona przez : <a href="mailto:$email$" style="color:#FFFFFF;">$email$</a></li>
+                            </ul>
+                            Dziękujemy za zaufanie.
+                            <br>
+                            Państwa początkowy umowny próg budżetowy zostanie automatycznie przywrócony w przyszłym miesiącu.
+                            <br><br>
+                            Z poważaniem
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div style="padding:40px 0 60px; font-size: 12px;"><b>Service Clients</b> - 12, rue Godot de Mauroy - 75009 Paris - France - Fax : +33  (01) 75 44 56 02</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff; padding: 10px 0;">
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/webkupiec-small.png" alt="webkupiec"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/choozen-small.png" alt="choozen"></a></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+>>
+alertconsumption_sv(url,maximumAmount,month,email) ::= <<
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="color: #fff;font-family: arial">
+
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700" style="background: #2a3079;color: #fff; font-family: arial;border: 1px solid #ccc;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff;padding:15px 0 5px;">
+                        <img border="0" width="125" height="40" src="http://marchands.leguide.com/public/img/logos/logo_leguide_group_header.png" alt="LeGuide.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="background: #2a3079;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;font-size: 14px;" align="left" valign="top" >
+                        <div style="padding: 25px 50px 35px;color:#fff;"><b>Hej!</b><br><br>Din begäran om att höja maxtaket för nätbutiken <a href="$url$" style="color:#FFFFFF;">$url$</a> har tillämpats.
+                            <ul>
+                                <li>Ditt nya maxtak är: $maximumAmount$€</li>
+                                <li>Detta maxtak gäller för månaden: $month$</li>
+                                <li>Denna ändring gjordes av: <a href="mailto:$email$" style="color:#FFFFFF;">$email$</a></li>
+                            </ul>
+                            Tack för ditt förtroende.
+                            <br>
+                            Ditt ursprungliga kontrakts maxtak återställs automatiskt nästa månad.
+                            <br><br>
+                            Med vänliga hälsningar,
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div style="padding:40px 0 60px; font-size: 12px;"><b>Service Clients</b> - 12, rue Godot de Mauroy - 75009 Paris - France - Fax : +33  (01) 75 44 56 02</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff; padding: 10px 0;">
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/ciao-small.png" alt="ciao"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/prisvis-small_se.png" alt="prisvis"></a></td>
+                                    <td width="40" align="center"></td>
+                                    <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/choozen-small.png" alt="choozen"></a></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+>>
+alertconsumption_da(url,maximumAmount,month,email) ::= <<
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="color: #fff;font-family: arial">
+
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700" style="background: #2a3079;color: #fff; font-family: arial;border: 1px solid #ccc;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff;padding:15px 0 5px;">
+                        <img border="0" width="125" height="40" src="http://marchands.leguide.com/public/img/logos/logo_leguide_group_header.png" alt="LeGuide.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="background: #2a3079;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;font-size: 14px;" align="left" valign="top" >
+                        <div style="padding: 25px 50px 35px;color:#fff;"><b>Goddag,</b><br><br>Dit ønske om forhøjelse af loftet på følgende site <a href="$url$" style="color:#FFFFFF;">$url$</a> er blevet registreret.
+                            <ul>
+                                <li>Dit nye loft er: $maximumAmount$€</li>
+                                <li>Dette loft gælder for følgende måned: $month$</li>
+                                <li>Denne ændring er blevet foretaget af: <a href="mailto:$email$" style="color:#FFFFFF;">$email$</a></li>
+                            </ul>
+                            Vi takker dig for din tillid.
+                            <br>
+                            Dit sædvanlige loft som beskevet i kontrakten, bliver automatisk réetableret i næste måned.
+                            <br><br>
+                            Med venlig hilsen
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div style="padding:40px 0 60px; font-size: 12px;"><b>Service Clients</b> - 12, rue Godot de Mauroy - 75009 Paris - France - Fax : +33  (01) 75 44 56 02</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff; padding: 10px 0;">
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/prisvis-small_dk.png" alt="prisvis"></a></td>
+                                <td width="40" align="center"></td>
+                                <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/choozen-small.png" alt="choozen"></a></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+>>
+alertconsumption_es(url,maximumAmount,month,email) ::= <<
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="color: #fff;font-family: arial">
+
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700" style="background: #2a3079;color: #fff; font-family: arial;border: 1px solid #ccc;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff;padding:15px 0 5px;">
+                        <img border="0" width="125" height="40" src="http://marchands.leguide.com/public/img/logos/logo_leguide_group_header.png" alt="LeGuide.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" style="background: #2a3079;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;font-size: 14px;" align="left" valign="top" >
+                        <div style="padding: 25px 50px 35px;color:#fff;"><b>Buenos días,</b><br><br>Su solicitud para aumentar su presupuesto para el sitio <a href="$url$" style="color:#FFFFFF;">$url$</a> ha sido tomada en cuenta.
+                            <ul>
+                                <li>Su nuevo limite máximo es de: $maximumAmount$€</li>
+                                <li>Este limite máximo es valido por el mes : $month$</li>
+                                <li>Esta modificación ha sido efectuada (realizada) por: <a href="mailto:$email$" style="color:#FFFFFF;">$email$</a></li>
+                            </ul>
+                            Le agradecemos por su confianza.
+                            <br>
+                            Su limite máximo contractual sera restablecido automaticamente el próximo mes.
+                            <br><br>
+                            Cordialmente
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <div style="padding:40px 0 60px; font-size: 12px;"><b>Service Clients</b> - 12, rue Godot de Mauroy - 75009 Paris - France - Fax : +33  (01) 75 44 56 02</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="background: #fff; padding: 10px 0;">
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/ciao-small.png" alt="ciao"></a></td>
+                              <td width="40" align="center"></td>
+                              <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/pikengo-small.png" alt="pikengo"></a></td>
+                              <td width="40" align="center"></td>
+                              <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/dooyoo-small.png" alt="dooyoo"></a></td>
+                              <td width="40" align="center"></td>
+                              <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/mercamania-small.png" alt="mercamania"></a></td>
+                              <td width="40" align="center"></td>
+                              <td><a href="#"><img border="0" src="http://marchands.leguide.com/public/img/logos/choozen-small.png" alt="choozen"></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+>>

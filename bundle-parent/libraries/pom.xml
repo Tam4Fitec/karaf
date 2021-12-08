@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>com.leguide.backoffice.karaf.bundle</groupId>
+      <artifactId>bundle-parent</artifactId>
+      <version>19.21.2</version>
+   </parent>
+   <groupId>com.leguide.backoffice.karaf.bundle.libraries</groupId>
+   <artifactId>parent</artifactId>
+   <packaging>pom</packaging>
+
+   <name>${application.name} :: ${project.name} :: ${project.artifactId}</name>
+   <description>Librairies for BackOffice application</description>
+
+   <modules>
+      <module>client.engine.offers</module>
+      <module>brands.common</module>
+      <module>security.hmac</module>
+		<module>client.webs.offers</module>
+   </modules>
+
+   <properties>
+      <project.name>libraries</project.name>
+   </properties>
+
+</project>

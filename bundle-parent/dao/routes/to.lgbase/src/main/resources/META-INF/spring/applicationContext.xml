@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:osgix="http://www.springframework.org/schema/osgi-compendium" xmlns:osgi="http://www.springframework.org/schema/osgi" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/osgi-compendium http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+            http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+   <context:annotation-config/>
+   <context:component-scan base-package="com.leguide.backoffice.karaf.bundle.dao.lgbase.routes"/>
+
+   <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+      <property name="ignoreUnresolvablePlaceholders" value="true"/>
+      <property name="propertiesArray">
+         <array>
+            <osgix:cm-properties id="com.leguide.backoffice.karaf.bundle.dao.routes.to.lgbase.properties" persistent-id="com.leguide.backoffice.karaf.bundle.dao.routes.to.lgbase"/>
+         </array>
+      </property>
+   </bean>
+
+   <osgi:reference id="lgClientDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgBaseClientDao"/>
+   <osgi:reference id="lgAccountDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseAccountDao"/>
+   <osgi:reference id="lgAccountClientDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseAccountClientDao"/>
+   <osgi:reference id="hazelcastInstance" interface="com.hazelcast.core.HazelcastInstance"/>
+   <bean id="hazelcast" class="org.apache.camel.component.hazelcast.HazelcastComponent">
+      <property name="hazelcastInstance" ref="hazelcastInstance"/>
+   </bean>
+
+</beans>

@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <parent>
+      <groupId>com.leguide.backoffice.karaf.bundle.dao</groupId>
+      <artifactId>routes</artifactId>
+      <version>19.21.2</version>
+   </parent>
+   <groupId>com.leguide.backoffice.karaf.bundle.dao.routes</groupId>
+   <artifactId>to.lgbase</artifactId>
+   <packaging>bundle</packaging>
+
+   <name>${application.name} :: ${project.name} :: ${project.artifactId}</name>
+   <description>DAO Routes for lgbase Database</description>
+
+   <properties>
+      <build-helper-maven-plugin.skipAttach.configuration>true</build-helper-maven-plugin.skipAttach.configuration>
+   </properties>
+
+   <dependencies>
+      <dependency>
+         <groupId>com.leguide.backoffice.karaf.bundle.business</groupId>
+         <artifactId>models</artifactId>
+         <version>${project.version}</version>
+         <type>bundle</type>
+      </dependency>
+      <dependency>
+         <groupId>com.leguide.backoffice.karaf.bundle.business</groupId>
+         <artifactId>models-marshalling</artifactId>
+         <version>${project.version}</version>
+         <type>bundle</type>
+      </dependency>
+      <dependency>
+         <groupId>com.leguide.backoffice.karaf.bundle.dao</groupId>
+         <artifactId>lgbase</artifactId>
+         <version>${project.version}</version>
+         <type>bundle</type>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.camel</groupId>
+         <artifactId>camel-jaxb</artifactId>
+         <version>${camel.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.camel</groupId>
+         <artifactId>camel-zipfile</artifactId>
+         <version>${camel.version}</version>
+      </dependency>
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-test</artifactId>
+         <version>${spring.version}</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.kubek2k</groupId>
+         <artifactId>springockito</artifactId>
+         <version>1.0.9</version>
+      </dependency>
+   </dependencies>
+</project>

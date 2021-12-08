@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="backend-${project.version}">
+
+   <repository>mvn:org.apache.camel.karaf/apache-camel/${camel.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/datasources/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/dao/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/dao-backend/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/libraries/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/normalizer/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/services/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/camel/${project.version}/xml/features</repository>
+
+   <feature name="webservices" version="${project.version}" description="WebServices">
+      <feature version="${project.version}">webservices-shopsite</feature>
+      <feature version="${project.version}">offer-categorization</feature>
+      <feature version="${project.version}">wsbrands</feature>
+      <feature version="${project.version}">wsclient</feature>
+   </feature>
+
+   <feature name="webservices-shopsite" version="${project.version}" description="WebServices for Shopsite">
+      <feature version="${project.version}">business-merchant</feature>
+
+      <feature>camel-core</feature>
+      <feature>camel-jackson</feature>
+      <feature>camel-spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="${project.version}">hazelcast-service</feature>
+
+      <bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+      <feature version="${project.version}">lgbaseDAO</feature>
+      <feature version="${project.version}">lgshopDAO</feature>
+
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/facade/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/legacy/${project.version}</bundle>
+
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.business.parent.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.business/parent/${project.version}/cfg
+      </configfile>
+
+      <bundle>wrap:mvn:org.codehaus.plexus/plexus-utils/3.0.17</bundle>
+      <bundle>mvn:org.codehaus.jackson/jackson-core-asl/${jackson.version}</bundle>
+      <bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/${jackson.version}</bundle>
+      <bundle>mvn:org.codehaus.jackson/jackson-jaxrs/${jackson.version}</bundle>
+
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.webservices/ShopsiteService/${project.version}</bundle>
+   </feature>
+
+   <feature name="wsbrands" version="${project.version}" description="BackOffice web service WSBrands">
+      <feature version="${project.version}">dao-basics</feature>
+      <feature start-level="30">cellar</feature>
+      <feature>hawtio</feature>
+      <feature version="${project.version}">hazelcast-service</feature>
+      <feature version="${spring.features.version}">spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="${spring.features.version}">spring-aspects</feature>
+      <feature version="${camel.version}">camel-cxf</feature>
+      <feature version="${spring.features.version}">spring-web</feature>
+      <feature version="${project.version}">normalizer</feature>
+
+      <feature>datasource-brands</feature>
+
+      <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.cglib/2.2_2</bundle>
+      <bundle>wrap:mvn:commons-collections/commons-collections/${common-collection.version}</bundle>
+      <bundle>wrap:mvn:com.sdicons.jsontools/jsontools-core/${com.sdicons.jsontools.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.libraries/brands.common/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/brands/${project.version}</bundle>
+      <bundle>
+         mvn:com.leguide.backoffice.karaf.bundle.webservices/wsbrands/${project.version}
+      </bundle>
+   </feature>
+
+   <feature name="offer-categorization" version="${project.version}" description="BackOffice - WS Catgorization">
+      <feature version="${camel.version}">camel-spring</feature>
+      <feature version="${camel.version}">camel-cxf</feature>
+      <feature version="${camel.version}">camel-jackson</feature>
+      <feature version="${camel.version}">camel-http</feature>
+      <feature version="${camel.version}">camel-blueprint</feature>
+      <feature version="${camel.version}">camel-hazelcast</feature>
+      <feature version="${project.version}">search-engine-client-service</feature>
+      <feature version="${project.version}">hadoop-service</feature>
+
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="${project.version}">datasource-lgbase</feature>
+
+      <bundle>mvn:org.codehaus.jackson/jackson-core-asl/${jackson.version}</bundle>
+      <bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/${jackson.version}</bundle>
+      <bundle>mvn:org.codehaus.jackson/jackson-jaxrs/${jackson.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.webservices/offer-categorization/${project.version}</bundle>
+   </feature>
+
+
+   <feature name="wsclient" version="${project.version}" description="BackOffice - WS Client">
+      <feature>camel-spring</feature>
+      <feature>camel-cxf</feature>
+      <feature>camel-csv</feature>
+      <feature>camel-jackson</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+      <bundle>mvn:org.codehaus.jackson/jackson-core-asl/1.9.5</bundle>
+      <bundle>mvn:org.codehaus.jackson/jackson-jaxrs/1.9.5</bundle>
+      <bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.5</bundle>
+      <feature version="${project.version}">hazelcast-service</feature>
+      <bundle>mvn:de.twentyeleven.skysail/org.antlr.stringtemplate-osgi/${stringtemplate.version}</bundle>
+
+      <feature version="${project.version}">lgbaseDAO</feature>
+      <feature version="${project.version}">lgshopDAO</feature>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/facade/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/legacy/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.services/email/${project.version}</bundle>
+      <feature version="${project.version}">business-merchant</feature>
+
+      <configfile finalname="/tpl/templates/alertconsumption.stg">
+         mvn:com.leguide.backoffice.karaf.bundle.webservices/wsclient/${project.version}/stg/templates
+      </configfile>
+
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.webservices.wsclient.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.webservices/wsclient/${project.version}/cfg
+      </configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.webservices/wsclient/${project.version}</bundle>
+   </feature>
+
+</features>

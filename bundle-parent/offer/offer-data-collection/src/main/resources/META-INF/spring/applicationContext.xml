@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:osgi="http://www.springframework.org/schema/osgi"
+	xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/osgi-compendium http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
+        http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd"
+	default-lazy-init="false">
+
+	<context:annotation-config />
+	<context:component-scan base-package="com.leguide.backoffice.karaf.bundle.offer.datacollection" />
+
+	<bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="propertiesArray">
+			<array>
+				<osgix:cm-properties id="topSearchVisitorProcessingProperties" persistent-id="com.leguide.backoffice.karaf.bundle.offer.datacollection" />
+			</array>
+		</property>
+	</bean>
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="properties" ref="properties" />
+	</bean>
+
+
+	<bean id="redisBean" class="com.leguide.backoffice.karaf.bundle.offer.datacollection.beans.RedisBean"/>
+
+
+    <bean id="redisMasterPoolConfig" class="org.apache.commons.pool2.impl.GenericObjectPoolConfig"/>
+
+    <bean id="redisMasterPool" class="redis.clients.jedis.JedisPool">
+    	<constructor-arg ref="redisMasterPoolConfig"/>
+    	<constructor-arg type="java.lang.String" value="${redis.master.server}"/>
+       	<constructor-arg type="int" value="${redis.master.port}"/>
+    </bean>
+
+    <osgi:reference id="hazelcastInstance" interface="com.hazelcast.core.HazelcastInstance"/>
+    <bean id="hazelcast" class="org.apache.camel.component.hazelcast.HazelcastComponent">
+        <property name="hazelcastInstance" ref="hazelcastInstance"/>
+    </bean>
+</beans>

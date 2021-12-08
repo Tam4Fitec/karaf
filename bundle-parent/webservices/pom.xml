@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>com.leguide.backoffice.karaf.bundle</groupId>
+      <artifactId>bundle-parent</artifactId>
+      <version>19.21.2</version>
+   </parent>
+   <groupId>com.leguide.backoffice.karaf.bundle.webservices</groupId>
+   <artifactId>parent</artifactId>
+   <packaging>pom</packaging>
+
+   <name>${application.name} :: ${project.name} :: ${project.artifactId}</name>
+   <description>Webservices for BackOffice application</description>
+
+   <modules>
+      <module>wsbrands</module>
+      <module>wsclient</module>
+      <module>offer-categorization</module>
+   </modules>
+
+   <properties>
+      <project.name>webservices</project.name>
+   </properties>
+
+</project>

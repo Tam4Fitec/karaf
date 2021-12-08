@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:tx="http://www.springframework.org/schema/tx" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+
+            http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+   <tx:annotation-driven/>
+   <context:annotation-config/>
+
+   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+      <property name="driverClassName" value="org.h2.Driver"/>
+      <property name="url" value="jdbc:h2:mem:lgshop;MODE=MySQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS lgshop\; SET SCHEMA lgshop"/>
+   </bean>
+
+   <jdbc:initialize-database data-source="dataSource" ignore-failures="DROPS">
+      <jdbc:script location="classpath:sql/lg_shop_mapping_merchant.sql"/>
+      <jdbc:script location="classpath:sql/lg_store.sql"/>
+      <jdbc:script location="classpath:sql/rf_country.sql"/>
+      <jdbc:script location="classpath:sql/rf_ksite.sql"/>
+      <jdbc:script location="classpath:sql/rf_label.sql"/>
+      <jdbc:script location="classpath:sql/rf_language.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_alias.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_blacklist_whitelist.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_catalog.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_delivery.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_internal_notification.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_listing.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_payment.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_privacy_policy.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_relation.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_relation_nm.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_report_subscription.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_sandbox.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_society.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_state.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_state_history.sql"/>
+      <jdbc:script location="classpath:sql/tb_shopsite_url.sql"/>
+      <jdbc:script location="classpath:sql/wm_shopsite.sql"/>
+   </jdbc:initialize-database>
+
+   <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+      <property name="dataSource" ref="dataSource"/>
+      <property name="packagesToScan" value="com.leguide.backoffice.karaf.dao.lgshop"/>
+      <property name="persistenceXmlLocation" value="classpath:persistence-test.xml"/>
+      <property name="persistenceUnitName" value="lgshopTest"/>
+      <property name="jpaVendorAdapter">
+         <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+      </property>
+      <property name="jpaProperties">
+         <props>
+            <prop key="hibernate.hbm2ddl.auto">update</prop>
+            <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+            <prop key="hibernate.show_sql">true</prop>
+            <prop key="hibernate.default_schema">lgshop</prop>
+         </props>
+      </property>
+   </bean>
+
+   <tx:annotation-driven transaction-manager="transactionManager"/>
+   <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+      <property name="entityManagerFactory" ref="entityManagerFactory"/>
+      <property name="dataSource" ref="dataSource"/>
+   </bean>
+
+   <bean id="lgshopRefCountryDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopRefCountryDaoImpl"/>
+   <bean id="lgshopRefKSiteDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopRefKSiteDaoImpl"/>
+   <bean id="lgshopRefLabelDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopRefLabelDaoImpl"/>
+   <bean id="lgshopRefLanguageDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopRefLanguageDaoImpl"/>
+   <bean id="lgshopShopsiteAliasDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteAliasDaoImpl"/>
+   <bean id="lgshopShopsiteBlackAndWhiteListDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteBlackAndWhiteListDaoImpl"/>
+   <bean id="lgshopShopsiteCatalogDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteCatalogDaoImpl"/>
+   <bean id="lgshopShopsiteDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteDaoImpl"/>
+   <bean id="lgshopShopsiteDeliveryDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteDeliveryDaoImpl"/>
+   <bean id="lgshopShopsiteInternalNotificationDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteInternalNotificationDaoImpl"/>
+   <bean id="lgshopShopsiteListingDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteListingDaoImpl"/>
+   <bean id="lgshopShopsitePrivacyPolicyDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsitePrivacyPolicyDaoImpl"/>
+   <bean id="lgshopShopsiteRelationDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteRelationDaoImpl"/>
+   <bean id="lgshopShopsiteReportSubscriptionDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteReportSubscriptionDaoImpl"/>
+   <bean id="lgshopShopsiteSandboxDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteSandboxDaoImpl"/>
+   <bean id="lgshopShopsiteSocietyDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteSocietyDaoImpl"/>
+   <bean id="lgshopShopsiteStateDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteStateDaoImpl"/>
+   <bean id="lgshopShopsiteStateHistoryDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteStateHistoryDaoImpl"/>
+   <bean id="lgshopShopsiteUrlDaoImpl" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteUrlDaoImpl"/>
+</beans>

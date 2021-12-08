@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hazelcast>
+    <!-- DO NOT change cache name -->
+    <map name="brandsBOCacheId">
+        <max-size>10</max-size>
+        <eviction-policy>LFU</eviction-policy>
+        <time-to-live-seconds>1</time-to-live-seconds>
+    </map>
+
+    <!-- DO NOT change cache name -->
+    <map name="brandsBOCacheName">
+        <max-size>10</max-size>
+        <eviction-policy>LFU</eviction-policy>
+        <time-to-live-seconds>1</time-to-live-seconds>
+    </map>
+</hazelcast>

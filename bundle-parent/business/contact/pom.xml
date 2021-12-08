@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.leguide.backoffice.karaf.bundle.business</groupId>
+        <artifactId>parent</artifactId>
+        <version>19.21.2</version>
+    </parent>
+
+	<groupId>com.leguide.backoffice.karaf.bundle.business.services</groupId>
+    <artifactId>contact</artifactId>
+    <packaging>bundle</packaging>
+
+    <name>${application.name} :: ${project.name} :: ${project.artifactId}</name>
+    <description>Business services Contacts</description>
+
+	<properties>
+		<build-helper-maven-plugin.skipAttach.configuration>true</build-helper-maven-plugin.skipAttach.configuration>
+	</properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-core</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.leguide.backoffice.karaf.bundle.business</groupId>
+            <artifactId>models</artifactId>
+            <version>${project.version}</version>
+            <type>bundle</type>
+        </dependency>
+        <dependency>
+            <groupId>com.leguide.backoffice.karaf.bundle.business</groupId>
+            <artifactId>models-marshalling</artifactId>
+            <version>${project.version}</version>
+            <type>bundle</type>
+        </dependency>
+ 		<dependency>
+			<groupId>com.leguide.backoffice.karaf.bundle.dao</groupId>
+			<artifactId>facade</artifactId>
+			<version>${project.version}</version>
+			<type>bundle</type>
+		</dependency>
+		<dependency>
+			<groupId>com.leguide.backoffice.karaf.bundle.dao</groupId>
+			<artifactId>lgbase</artifactId>
+			<version>${project.version}</version>
+			<type>bundle</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jackson</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-gson</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jms</artifactId>
+			<version>${camel.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jms</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+        <!-- TEST -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-test</artifactId>
+            <version>${camel.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-test-spring3</artifactId>
+            <version>${camel.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<scope>test</scope>
+		</dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Import-Package>
+                            org.apache.camel.impl,
+                            *
+                        </Import-Package>
+                        <Bundle-SymbolicName>${project.groupId}-${project.artifactId}</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+

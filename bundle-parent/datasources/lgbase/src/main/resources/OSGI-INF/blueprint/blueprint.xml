@@ -1,0 +1,38 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cm="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.1.0" 
+    xsi:schemaLocation="
+  http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
+  http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.1.0 http://aries.apache.org/schemas/blueprint-cm/blueprint-cm-1.1.0.xsd
+  ">
+
+	<cm:property-placeholder persistent-id="com.leguide.backoffice.karaf.bundle.datasources.lgbase"
+		update-strategy="reload">
+	</cm:property-placeholder>
+	
+	<bean id="dataSource" class="com.leguide.backoffice.karaf.bundle.datasources.factories.MysqlDataSourceFactory"
+		  factory-method="create">
+		<argument index="0" value="${url}" />
+		<argument index="1" value="${user}" />
+		<argument index="2" value="${password}" />
+	</bean>
+	
+	<service interface="javax.sql.DataSource" ref="dataSource">
+		<service-properties>
+			<entry key="osgi.jndi.service.name" value="jdbc/lgbase" />
+		</service-properties>
+	</service>
+	
+	<bean id="dataSourceXA" class="com.leguide.backoffice.karaf.bundle.datasources.factories.MysqlDataSourceFactory"
+		  factory-method="createXA">
+		<argument index="0" value="${url}" />
+		<argument index="1" value="${user}" />
+		<argument index="2" value="${password}" />
+	</bean>
+	
+	<service interface="javax.sql.XADataSource" ref="dataSourceXA">
+		<service-properties>
+			<entry key="osgi.jndi.service.name" value="jdbc/lgbaseXA" />
+		</service-properties>
+	</service>		
+	
+</blueprint>

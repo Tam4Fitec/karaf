@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="common-${project.version}">
+
+   <feature name="hazelcast-service" version="${project.version}" description="Backoffice Services Hazelcast Feature">
+      <feature version="${spring.features.version}">spring</feature>
+      <bundle>mvn:com.eclipsesource.minimal-json/minimal-json/0.9.1</bundle>
+      <bundle>mvn:com.hazelcast/hazelcast/3.4.2</bundle>
+      <feature>transaction</feature>
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.services.hazelcast.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.services/hazelcast/${project.version}/cfg
+      </configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.services/hazelcast/${project.version}</bundle>
+   </feature>
+
+   <feature name="hadoop-service" version="${project.version}" description="Backoffice Services Hadoop Feature">
+
+      <bundle>mvn:org.apache.commons/commons-lang3/${commons-lang3.version}</bundle>
+      <bundle>mvn:commons-io/commons-io/${common-io.version}</bundle>
+      <bundle>mvn:commons-lang/commons-lang/${common-lang.version}</bundle>
+      <bundle>mvn:commons-pool/commons-pool/${common-pool.version}</bundle>
+      <bundle>mvn:commons-cli/commons-cli/1.2</bundle>
+      <bundle>mvn:commons-configuration/commons-configuration/1.9</bundle>
+      <bundle>mvn:commons-collections/commons-collections/3.2.2</bundle>
+      <bundle>mvn:commons-codec/commons-codec/1.9</bundle>
+      <bundle>wrap:mvn:com.google.guava/guava/${guava.version}</bundle>
+      <bundle>wrap:mvn:org.apache.htrace/htrace-core/3.1.0-incubating</bundle>
+
+      <bundle>wrap:mvn:com.leguide.backend/hbase-servicemix-leguide/${hbase-servicemix-leguide.version}</bundle>
+
+      <feature>camel-core</feature>
+      <feature>camel-spring</feature>
+      <feature>camel-netty4</feature>
+
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.services.hadoop.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.services/hadoop/${project.version}/cfg
+      </configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.services/hadoop/${project.version}</bundle>
+   </feature>
+
+   <feature name="nagios-service" version="${project.version}" description="Backoffice Services Nagios Feature">
+      <feature>camel-spring</feature>
+      <feature>camel-nagios</feature>
+
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.services.nagios.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.services/nagios/${project.version}/cfg
+      </configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.services/nagios/${project.version}</bundle>
+   </feature>
+
+
+   <feature name="rules-engine-service" version="${project.version}" description="Backoffice rules engine service">
+      <feature>hawtio</feature>
+      <feature>camel-spring</feature>
+      <feature version="${project.version}">lgshopDAO</feature>
+      <feature version="${project.version}">thesaurusDAO</feature>
+
+      <bundle>wrap:mvn:com.google.protobuf/protobuf-java/2.4.0a</bundle>
+      <bundle>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxb-api-2.2/2.4.0</bundle>
+      <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.10_1</bundle>
+      <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-xjc/2.2.10_1</bundle>
+      <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xstream/1.4.7_1</bundle>
+      <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.antlr-runtime/3.5.2_1</bundle>
+      <bundle>mvn:org.mvel/mvel2/2.1.3.Final</bundle>
+      <bundle>mvn:org.osgi/org.osgi.core/4.3.1</bundle>
+      <bundle>mvn:org.springframework.osgi/spring-osgi-core/1.2.1</bundle>
+      <bundle>wrap:mvn:org.eclipse.jdt.core.compiler/ecj/3.5.1</bundle>
+
+      <bundle>mvn:org.drools/knowledge-api/${drools.version}</bundle>
+      <bundle>mvn:org.drools/drools-core/${drools.version}</bundle>
+      <bundle>mvn:org.drools/drools-compiler/${drools.version}</bundle>
+
+
+      <configfile finalname="/tpl/rules/shopsite/generic.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-generic</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite1.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite1</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite2.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite2</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite4.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite4</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite8.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite8</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite16.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite16</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite32.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite32</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite64.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite64</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite128.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite128</configfile>
+      <!-- es -->
+      <configfile finalname="/tpl/rules/shopsite/2/ksite128.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/es-shopsite-ksite128</configfile>
+      <!-- end es -->
+      <configfile finalname="/tpl/rules/shopsite/ksite256.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite256</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite512.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite512</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite1024.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite1024</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite2048.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite2048</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite4096.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite4096</configfile>
+      <!-- de -->
+      <configfile finalname="/tpl/rules/shopsite/3/ksite512.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/de-shopsite-ksite512</configfile>
+      <configfile finalname="/tpl/rules/shopsite/3/ksite1024.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/de-shopsite-ksite1024</configfile>
+      <configfile finalname="/tpl/rules/shopsite/3/ksite2048.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/de-shopsite-ksite2048</configfile>
+      <configfile finalname="/tpl/rules/shopsite/3/ksite4096.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/de-shopsite-ksite4096</configfile>
+      <!--  end de -->
+      <configfile finalname="/tpl/rules/shopsite/ksite8192.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite8192</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite16384.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite16384</configfile>
+      <configfile finalname="/tpl/rules/shopsite/ksite32768.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/shopsite-ksite32768</configfile>
+
+      <!-- category -->
+      <configfile finalname="/tpl/rules/category/generic.drl">mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}/drl/category-generic</configfile>
+
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.services/rules.engine/${project.version}</bundle>
+   </feature>
+
+   <feature name="azure-service" version="${project.version}" description="Backoffice Services Azure Feature">
+      <feature>hawtio</feature>
+      <feature>camel-spring</feature>
+      <bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+      <bundle>mvn:commons-io/commons-io/${common-io.version}</bundle>
+      <bundle>wrap:mvn:com.microsoft.azure/azure-storage/${azure.version}</bundle>
+      <bundle>mvn:org.apache.camel/camel-azure/${camel.version}</bundle>
+
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.services.azure.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.services/azure/${project.version}/cfg
+      </configfile>
+   </feature>
+
+   <feature name="search-engine-client-service" version="${project.version}" description="Backoffice Search Engine Client OSGI services">
+      <feature>hawtio</feature>
+      <feature>camel-spring</feature>
+      <bundle>mvn:commons-lang/commons-lang/${common-lang.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.libraries/client.engine.offers/${project.version}</bundle>
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.services.search.engine.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.services/search.engine/${project.version}/cfg
+      </configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.services/search.engine/${project.version}</bundle>
+   </feature>
+
+   <feature name="statsd-service" version="${project.version}" description="Backoffice Services StatsD Feature">
+      <bundle>wrap:mvn:com.timgroup/java-statsd-client/${statsd.version}</bundle>
+
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.services.statsd.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.services/statsd/${project.version}/cfg
+      </configfile>
+   </feature>
+
+   <feature name="download-service" version="${project.version}" description="Backoffice Services Download Feature">
+      <feature>hawtio</feature>
+      <feature>camel-spring</feature>
+      <feature>camel-exec</feature>
+      <feature>camel-jetty</feature>
+      <feature>camel-spring-redis</feature>
+      <bundle>mvn:commons-io/commons-io/${common-io.version}</bundle>
+
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.services.download.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.services/download/${project.version}/cfg
+      </configfile>
+
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.services/download/${project.version}</bundle>
+   </feature>
+</features>

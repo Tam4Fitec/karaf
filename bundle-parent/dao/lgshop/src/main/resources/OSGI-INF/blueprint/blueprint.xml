@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor
+	license agreements. See the NOTICE file distributed with this work for additional
+	information regarding copyright ownership. The ASF licenses this file to
+	You under the Apache License, Version 2.0 (the "License"); you may not use
+	this file except in compliance with the License. You may obtain a copy of
+	the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required
+	by applicable law or agreed to in writing, software distributed under the
+	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+	OF ANY KIND, either express or implied. See the License for the specific
+	language governing permissions and limitations under the License. -->
+<blueprint default-activation="eager" xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.0.0" xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0">
+
+   <bean id="shopsiteDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteAliasDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteAliasDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteBlackAndWhiteListDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteBlackAndWhiteListDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteCatalogDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteCatalogDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteDeliveryDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteDeliveryDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteInternalNotificationDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteInternalNotificationDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteListingDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteListingDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsitePrivacyPolicyDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsitePrivacyPolicyDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteRelationDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteRelationDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteReportSubscriptionDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteReportSubscriptionDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteSandboxDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteSandboxDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteSocietyDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteSocietyDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteStateDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteStateDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteStateHistoryDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteStateHistoryDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="shopsiteUrlDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopShopsiteUrlDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="refCountryDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopRefCountryDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="refLabelDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopRefLabelDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="refLanguageDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopRefLanguageDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+      <property name="hazelcastService" ref="hazelcastService"/>
+   </bean>
+
+   <reference id="hazelcastService" interface="com.leguide.backoffice.karaf.services.hazelcast.HazelcastService"/>
+
+   <bean id="refKSiteDao" class="com.leguide.backoffice.karaf.dao.lgshop.impl.LgshopRefKSiteDaoImpl">
+      <jpa:context unitname="lgshopXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+      <property name="hazelcastService" ref="hazelcastService"/>
+      <property name="languageDAO" ref="refLanguageDao"/>
+   </bean>
+
+   <service ref="shopsiteDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteDao"/>
+   <service ref="shopsiteAliasDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteAliasDao"/>
+   <service ref="shopsiteBlackAndWhiteListDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteBlackAndWhiteListDao"/>
+   <service ref="shopsiteCatalogDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteCatalogDao"/>
+   <service ref="shopsiteDeliveryDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteDeliveryDao"/>
+   <service ref="shopsiteInternalNotificationDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteInternalNotificationDao"/>
+   <service ref="shopsiteListingDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteListingDao"/>
+   <service ref="shopsitePrivacyPolicyDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsitePrivacyPolicyDao"/>
+   <service ref="shopsiteRelationDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteRelationDao"/>
+   <service ref="shopsiteReportSubscriptionDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteReportSubscriptionDao"/>
+   <service ref="shopsiteSandboxDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteSandboxDao"/>
+   <service ref="shopsiteSocietyDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteSocietyDao"/>
+   <service ref="shopsiteStateDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteStateDao"/>
+   <service ref="shopsiteStateHistoryDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteStateHistoryDao"/>
+   <service ref="shopsiteUrlDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopShopsiteUrlDao"/>
+
+   <service ref="refCountryDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopRefCountryDao"/>
+
+   <service ref="refLabelDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopRefLabelDao"/>
+   <service ref="refLanguageDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopRefLanguageDao"/>
+   <service ref="refKSiteDao" interface="com.leguide.backoffice.karaf.dao.lgshop.LgshopRefKSiteDao"/>
+
+   <!-- Mbean to clear ksite cache -->
+   <bean id="cacheMBean" class="com.leguide.backoffice.karaf.dao.lgshop.mbean.MbeanClearCacheServiceImpl">
+      <property name="hazelcastService" ref="hazelcastService"/>
+   </bean>
+
+   <service ref="cacheMBean" auto-export="interfaces">
+      <service-properties>
+         <entry key="jmx.objectname" value="com.leguide.backoffice.karaf.admin:type=ksite,name=invalidateCache"/>
+      </service-properties>
+   </service>
+</blueprint>

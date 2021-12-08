@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:lg="com.leguide.mobile.xsd.response" elementFormDefault="qualified">
+
+	<xs:import namespace="com.leguide.mobile.xsd.response"
+		schemaLocation="response.xsd" />
+
+	<xs:element name="RESULTATPI">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="lg:Response">
+					<xs:sequence>
+						<xs:element ref="PRODUCT" />
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PRODUCT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PROD_ID" />
+				<xs:element ref="PROD_BASE_ID" />
+				<xs:element ref="PROD_MARK" />
+				<xs:element ref="PROD_WITH_CARAC" />
+				<xs:element ref="PROD_MASQUE" />
+				<xs:element ref="PROD_GARANTIE" />
+				<xs:element ref="PROD_DISPO" />
+				<xs:element ref="PROD_DISPO_NAME" />
+				<xs:element ref="PROD_OCCASION" />
+				<xs:element ref="PROD_SOLDE" />
+				<xs:element ref="PROD_PRIVE" />
+				<xs:element ref="CAT_ID_INTERNE" />
+				<xs:element ref="CAT_ID" />
+				<xs:element ref="CAT_SINGLE_NAME" />
+				<xs:element ref="CAT_URL" />
+				<xs:element ref="SHOP_ID" />
+				<xs:element ref="SHOP_VARS" />
+				<xs:element ref="SHOP_LOGO" />
+				<xs:element ref="SHOP_NAME" />
+				<xs:element ref="SHOP_GLOBAL" />
+				<xs:element ref="SHOP_MEDIATION" />
+				<xs:element ref="SHOP_PAYS" />
+				<xs:element ref="SHOP_LABEL_VALID" />
+				<xs:element ref="SHOP_LABEL_DEBUT" />
+				<xs:element ref="SHOP_LABEL_FIN" />
+				<xs:element ref="PROD_EURO_PRICE" />
+				<xs:element ref="PROD_EURO_FP" />
+				<xs:element ref="PROD_EURO_DISCOUNT" />
+				<xs:element ref="PROD_D3E" />
+				<xs:element ref="PROD_INTL_DEVISE" />
+				<xs:element ref="PROD_INTL_PRICE" />
+				<xs:element ref="PROD_INTL_FP" />
+				<xs:element ref="PROD_CAT_SHOP" />
+				<xs:element ref="PROD_ALPHA1" />
+				<xs:element ref="PROD_ALPHA2" />
+				<xs:element ref="PROD_EAN13" />
+				<xs:element ref="PROD_REF_INTERNE" />
+				<xs:element ref="PROD_REF" />
+				<xs:element ref="PROD_URL" />
+				<xs:element ref="PROD_IMG" />
+				<xs:element ref="PROD_DESIGNATION" />
+				<xs:element ref="PROD_DESCRIPTION" />
+				<xs:element ref="PROD_EXTRAS" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PROD_ID" type="xs:integer" />
+	<xs:element name="PROD_BASE_ID" type="xs:integer" />
+	<xs:element name="PROD_MARK" type="xs:NCName" />
+	<xs:element name="PROD_WITH_CARAC" type="xs:integer" />
+	<xs:element name="PROD_MASQUE" type="xs:integer" />
+	<xs:element name="PROD_GARANTIE" type="xs:integer" />
+	<xs:element name="PROD_DISPO" type="xs:integer" />
+	<xs:element name="PROD_DISPO_NAME" type="xs:integer" />
+	<xs:element name="PROD_OCCASION" type="xs:integer" />
+	<xs:element name="PROD_SOLDE" type="xs:integer" />
+	<xs:element name="PROD_PRIVE" type="xs:integer" />
+	<xs:element name="CAT_ID_INTERNE" type="xs:integer" />
+	<xs:element name="CAT_ID" type="xs:integer" />
+	<xs:element name="CAT_SINGLE_NAME" type="xs:string" />
+	<xs:element name="CAT_URL" type="xs:string" />
+	<xs:element name="SHOP_ID" type="xs:integer" />
+	<xs:element name="SHOP_VARS" type="xs:NMTOKEN" />
+	<xs:element name="SHOP_LOGO" type="xs:integer" />
+	<xs:element name="SHOP_NAME" type="xs:NCName" />
+	<xs:element name="SHOP_GLOBAL" type="xs:decimal" />
+	<xs:element name="SHOP_MEDIATION" type="xs:integer" />
+	<xs:element name="SHOP_PAYS" type="xs:NCName" />
+	<xs:element name="SHOP_LABEL_VALID" type="xs:integer" />
+	<xs:element name="SHOP_LABEL_DEBUT">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="SHOP_LABEL_FIN">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="PROD_EURO_PRICE" type="xs:decimal" />
+	<xs:element name="PROD_EURO_FP" type="xs:decimal" />
+	<xs:element name="PROD_EURO_DISCOUNT" type="xs:decimal" />
+	<xs:element name="PROD_D3E" type="xs:integer" />
+	<xs:element name="PROD_INTL_DEVISE" type="xs:NCName" />
+	<xs:element name="PROD_INTL_PRICE" type="xs:decimal" />
+	<xs:element name="PROD_INTL_FP" type="xs:decimal" />
+	<xs:element name="PROD_CAT_SHOP" type="xs:string" />
+	<xs:element name="PROD_ALPHA1">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="PROD_ALPHA2">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="PROD_EAN13">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="PROD_REF_INTERNE" type="xs:integer" />
+	<xs:element name="PROD_REF">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="PROD_URL" type="xs:anyURI" />
+	<xs:element name="PROD_IMG" type="xs:string" />
+	<xs:element name="PROD_DESIGNATION" type="xs:string" />
+	<xs:element name="PROD_DESCRIPTION" type="xs:string" />
+	<xs:element name="PROD_EXTRAS">
+		<xs:complexType />
+	</xs:element>
+</xs:schema>

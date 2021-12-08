@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor
+	license agreements. See the NOTICE file distributed with this work for additional
+	information regarding copyright ownership. The ASF licenses this file to
+	You under the Apache License, Version 2.0 (the "License"); you may not use
+	this file except in compliance with the License. You may obtain a copy of
+	the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required
+	by applicable law or agreed to in writing, software distributed under the
+	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+	OF ANY KIND, either express or implied. See the License for the specific
+	language governing permissions and limitations under the License. -->
+
+<!-- xmlns:ext="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.0.0" -->  
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:cm="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.1.0"
+            xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.0.0"
+            xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0"
+            xmlns:cxf="http://camel.apache.org/schema/blueprint/cxf"
+    xsi:schemaLocation="
+		http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
+		http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.1.0 http://aries.apache.org/schemas/blueprint-cm/blueprint-cm-1.1.0.xsd
+		http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd
+		http://camel.apache.org/schema/blueprint/cxf http://camel.apache.org/schema/blueprint/cxf/camel-cxf.xsd
+  ">
+
+	<reference id="lgbaseDS" interface="javax.sql.DataSource" filter="(osgi.jndi.service.name=jdbc/lgbase)"/>
+	<reference id="engineClientService" interface="com.leguide.backoffice.karaf.bundle.services.search.engine.ISearchEngineClientService"/>
+	<reference id="hbaseService" interface="com.leguide.backoffice.karaf.services.hadoop.HBaseService"/>	
+
+	<cxf:rsServer id="rsServer" address="/offerServices/" serviceClass="com.leguide.backoffice.karaf.webservices.offercategorization.services.impl.OfferCategorizationWebService">
+<!-- 
+    <cxf:providers>
+            <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
+        </cxf:providers>
+ -->
+    </cxf:rsServer>
+
+    <camelContext id="WsOfferCategorization" xmlns="http://camel.apache.org/schema/blueprint">
+       <package>com.leguide.backoffice.karaf.webservices.offercategorization.route</package>
+    </camelContext>
+    
+    <bean id="shopsiteDao" class="com.leguide.backoffice.karaf.webservices.offercategorization.dao.impl.LoadShopsiteDAOImpl">
+		<property name="lgbaseDS" ref="lgbaseDS" />
+    </bean>
+
+    <bean id="engineBean" class="com.leguide.backoffice.karaf.webservices.offercategorization.beans.EngineBean">
+        <property name="engineClientService" ref="engineClientService"></property>
+    </bean>
+    
+    <bean id="hbaseBean" class="com.leguide.backoffice.karaf.webservices.offercategorization.beans.HBaseBean">
+    	<property name="hbaseService" ref="hbaseService" />
+    </bean>
+
+	 <bean id="offerCategorizationProcessor" class="com.leguide.backoffice.karaf.webservices.offercategorization.processor.OfferCategorizationProcessor">
+		<property name="loadShopsiteDao" ref="shopsiteDao" />
+		<property name="hbaseBean" ref="hbaseBean" />
+		<property name="engineBean" ref="engineBean" />
+    </bean>
+</blueprint>

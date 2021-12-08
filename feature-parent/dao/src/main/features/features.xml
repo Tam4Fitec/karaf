@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="backoffice-${project.version}">
+
+   <repository>mvn:io.hawt/hawtio-karaf/1.2-M10/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/scheduler/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/datasources/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/services/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/libraries/${project.version}/xml/features</repository>
+   <repository>mvn:org.apache.camel.karaf/apache-camel/${camel.version}/xml/features</repository>
+
+   <feature name="all-daos" version="${project.version}" description="All DAOS">
+      <feature version="${project.version}">stats-dao</feature>
+      <feature version="${project.version}">dao-routes</feature>
+      <feature version="${project.version}">lgbaseDAO</feature>
+      <feature version="${project.version}">lgshopDAO</feature>
+      <feature version="${project.version}">lgintegrationDAO</feature>
+      <feature version="${project.version}">thesaurusDAO</feature>
+      <feature version="${project.version}">legacy-dao</feature>
+   </feature>
+
+   <feature name="stats-dao" version="${project.version}" description="Stats schema Mapping Dao">
+      <feature>jndi</feature>
+
+      <feature version="${project.version}">dao-basics</feature>
+      <feature version="${project.version}">datasource-stats</feature>
+      <feature version="${spring.features.version}">spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="1.2.1">spring-dm</feature>
+      <feature>war</feature>
+
+      <feature>datasource-stats</feature>
+
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/facade/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/stats/${project.version}</bundle>
+   </feature>
+
+   <feature name="dao-routes" version="${project.version}" description="Routes used by Dao">
+      <feature version="${cellar.version}">cellar</feature>
+      <feature version="${project.version}">dao-basics</feature>
+      <feature>hawtio</feature>
+      <feature version="${spring.features.version}">spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="${spring.features.version}">spring-aspects</feature>
+      <feature>camel-core</feature>
+      <feature>camel-jdbc</feature>
+      <feature>camel-jms</feature>
+      <feature>camel-spring</feature>
+      <feature>camel-xmljson</feature>
+      <feature>camel-gson</feature>
+      <feature>camel-ftp</feature>
+      <feature>camel-mail</feature>
+      <feature>camel-zipfile</feature>
+      <feature>camel-hazelcast</feature>
+      <feature version="${project.version}">hazelcast-service</feature>
+
+      <feature version="${project.version}">scheduler</feature>
+      <bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+      <feature>datasource-utils</feature>
+      <feature version="${project.version}">lgbaseDAO</feature>
+
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models-marshalling/${project.version}</bundle>
+
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.dao.routes.to.lgbase.cfg">mvn:com.leguide.backoffice.karaf.bundle.dao.routes/to.lgbase/${project.version}/cfg</configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao.routes/to.lgbase/${project.version}</bundle>
+   </feature>
+
+   <feature name="lgbaseDAO" version="${project.version}" description="LgbaseDAO feature">
+      <feature version="${project.version}">dao-basics</feature>
+      <feature version="${spring.features.version}">spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <bundle>mvn:org.apache.commons/commons-lang3/${commons-lang3.version}</bundle>
+      <feature version="${project.version}">datasource-lgbase</feature>
+      <bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/lgbase/${project.version}</bundle>
+   </feature>
+
+   <feature name="lgshopDAO" version="${project.version}" description="LgshopDAO feature">
+      <feature>jndi</feature>
+      <feature version="${project.version}">dao-basics</feature>
+      <feature version="${spring.features.version}">spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="1.2.1">spring-dm</feature>
+      <feature version="${project.version}">datasource-lgshop</feature>
+      <feature version="${project.version}">hazelcast-service</feature>
+      <bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/lgshop/${project.version}</bundle>
+   </feature>
+
+   <feature name="lgintegrationDAO" version="${project.version}" description="Lgintegration feature">
+      <feature>jndi</feature>
+      <feature version="${project.version}">dao-basics</feature>
+      <feature version="${spring.features.version}">spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="${project.version}">datasource-lgintegration</feature>
+      <bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/lgintegration/${project.version}</bundle>
+   </feature>
+
+   <feature name="thesaurusDAO" version="${project.version}" description="Thesaurus DAO feature">
+      <feature>transaction</feature>
+      <feature version="${spring.features.version}">spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="${project.version}">datasource-lgintegration</feature>
+      <feature version="${project.version}">hazelcast-service</feature>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/thesaurus/${project.version}</bundle>
+   </feature>
+
+   <feature name="legacy-dao" version="${project.version}" description="Legacy Dao feature">
+      <feature>jndi</feature>
+      <feature version="${project.version}">lgshopDAO</feature>
+      <feature version="${project.version}">lgbaseDAO</feature>
+      <feature version="${project.version}">lgintegrationDAO</feature>
+      <feature version="${project.version}">stats-dao</feature>
+      <feature version="${project.version}">hazelcast-service</feature>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/facade/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/legacy/${project.version}</bundle>
+   </feature>
+
+</features>

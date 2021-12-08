@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="backend-${project.version}">
+
+   <repository>mvn:io.hawt/hawtio-karaf/1.2-M10/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/datasources/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/libraries/${project.version}/xml/features</repository>
+   <repository>mvn:org.apache.camel.karaf/apache-camel/${camel.version}/xml/features</repository>
+
+   <feature name="dao-lgbe" version="${project.version}" description="Lgbe schema Mapping Dao">
+      <feature version="${project.version}">dao-basics</feature>
+
+      <feature version="${spring.features.version}">spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <bundle>mvn:commons-pool/commons-pool/${common-pool.version}</bundle>
+      <bundle>mvn:commons-dbcp/commons-dbcp/${common-dbcp.version}</bundle>
+      <bundle>wrap:mvn:mysql/mysql-connector-java/${mysql-connector.version}</bundle>
+      <bundle>mvn:commons-lang/commons-lang/${common-lang.version}</bundle>
+      <feature version="${camel.version}">camel-cxf</feature>
+
+      <feature>datasource-lgbe</feature>
+
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/facade/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/lgbe/${project.version}</bundle>
+   </feature>
+
+   <feature name="dao-emailing" version="${project.version}" description="BackOffice - Dao - Emailing">
+      <feature start-level="30">cellar</feature>
+      <feature>camel-spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="${project.version}">hazelcast-service</feature>
+
+      <bundle dependency='true'>mvn:org.apache.commons/commons-pool2/${common-pool2.version}</bundle>
+      <bundle>mvn:commons-dbcp/commons-dbcp/${common-dbcp.version}</bundle>
+
+      <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-codec/1.3_5</bundle>
+      <bundle>mvn:commons-collections/commons-collections/${common-collection.version}</bundle>
+
+      <feature>datasource-lgemailing</feature>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/emailing/${project.version}</bundle>
+   </feature>
+
+</features>

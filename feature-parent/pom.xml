@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>com.leguide.backoffice.karaf</groupId>
+      <artifactId>parent</artifactId>
+      <version>19.21.2</version>
+   </parent>
+
+   <groupId>com.leguide.backoffice.karaf.feature</groupId>
+   <artifactId>feature-parent</artifactId>
+   <packaging>pom</packaging>
+   <name>${application.name} :: ${project.artifactId}</name>
+   <description>All features group by business project</description>
+
+   <modules>
+      <module>backend-feature</module>
+      <module>datasources</module>
+      <module>normalizer</module>
+      <module>webservices</module>
+      <module>business</module>
+      <module>services</module>
+      <module>dao</module>
+      <module>dao-backend</module>
+      <module>offer</module>
+      <module>libraries</module>
+      <module>camel</module>
+   </modules>
+
+   <build>
+
+      <defaultGoal>install</defaultGoal>
+
+      <resources>
+         <resource>
+            <directory>${basedir}/src/main/features</directory>
+            <filtering>true</filtering>
+         </resource>
+      </resources>
+
+      <pluginManagement>
+         <plugins>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-resources-plugin</artifactId>
+               <version>${maven-resources-plugin.version}</version>
+               <executions>
+                  <execution>
+                     <id>copy-features</id>
+                     <phase>generate-resources</phase>
+                     <goals>
+                        <goal>resources</goal>
+                     </goals>
+                     <configuration>
+                        <outputDirectory>${project.build.directory}/features</outputDirectory>
+                     </configuration>
+                  </execution>
+               </executions>
+            </plugin>
+
+            <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>build-helper-maven-plugin</artifactId>
+               <executions>
+                  <execution>
+                     <id>attach-artifacts</id>
+                     <phase>package</phase>
+                     <goals>
+                        <goal>attach-artifact</goal>
+                     </goals>
+                     <configuration>
+                        <skipAttach>false</skipAttach>
+                        <artifacts>
+                           <artifact>
+                              <file>${project.build.directory}/features/features.xml</file>
+                              <type>xml</type>
+                              <classifier>features</classifier>
+                           </artifact>
+                        </artifacts>
+                     </configuration>
+                  </execution>
+               </executions>
+            </plugin>
+         </plugins>
+      </pluginManagement>
+
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+         </plugin>
+      </plugins>
+   </build>
+
+</project>

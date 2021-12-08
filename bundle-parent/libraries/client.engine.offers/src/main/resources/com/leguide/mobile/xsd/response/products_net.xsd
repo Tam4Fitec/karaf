@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	<xs:element name="RESULTAT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PROTOCOL_VERSION" />
+				<xs:element ref="QUERY_ID" />
+				<xs:element ref="EXACT_MATCH" />
+				<xs:element ref="WORD_COUNT" />
+				<xs:element ref="PRODUCT_COUNT" />
+				<xs:element ref="OFFRE_COUNT" />
+				<xs:element ref="NEUF_COUNT" />
+				<xs:element ref="OCCASE_COUNT" />
+				<xs:element ref="SOLDE_COUNT" />
+				<xs:element ref="PRIVE_COUNT" />
+				<xs:element ref="FREE_FP_COUNT" />
+				<xs:element ref="BARRE_COUNT" />
+				<xs:element ref="SHOP_COUNT" />
+				<xs:element ref="CAT_COUNT" />
+				<xs:element ref="PAGE_COUNT" />
+				<xs:element ref="PRICE_LIST_COUNT" />
+				<xs:element ref="PRICE_LIST" />
+				<xs:element ref="MARK_COUNT" />
+				<xs:element ref="MARK_LIST_COUNT" />
+				<xs:element ref="MARK_LIST" />
+				<xs:element ref="CRIT_BAR_LIST_COUNT" />
+				<xs:element ref="CRIT_BAR_LIST" />
+				<xs:element ref="CRIT_LIST_COUNT" />
+				<xs:element ref="CRIT_LIST" />
+				<xs:element ref="POPULAR_CAT_LIST_COUNT" />
+				<xs:element ref="POPULAR_CAT_LIST" />
+				<xs:element ref="PRODUCT_LIST_COUNT" />
+				<xs:element ref="PRODUCT_LIST" />
+				<xs:element ref="UNIVERS_LIST_COUNT" />
+				<xs:element ref="UNIVERS_LIST" />
+			</xs:sequence>
+			<xs:attribute name="version" use="required" type="xs:decimal" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PROTOCOL_VERSION" type="xs:decimal" />
+	<xs:element name="QUERY_ID" type="xs:integer" />
+	<xs:element name="EXACT_MATCH">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CAT_ID" />
+				<xs:element ref="CAT_NAME" />
+				<xs:element ref="CAT_URL" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="WORD_COUNT" type="xs:integer" />
+	<xs:element name="NEUF_COUNT" type="xs:integer" />
+	<xs:element name="OCCASE_COUNT" type="xs:integer" />
+	<xs:element name="SOLDE_COUNT" type="xs:integer" />
+	<xs:element name="PRIVE_COUNT" type="xs:integer" />
+	<xs:element name="FREE_FP_COUNT" type="xs:integer" />
+	<xs:element name="BARRE_COUNT" type="xs:integer" />
+	<xs:element name="CAT_COUNT" type="xs:integer" />
+	<xs:element name="PAGE_COUNT" type="xs:integer" />
+	<xs:element name="PRICE_LIST_COUNT" type="xs:integer" />
+	<xs:element name="PRICE_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="PRICE" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PRICE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PRICE_MIN" />
+				<xs:element ref="PRICE_MAX" />
+				<xs:element ref="PRODUCT_COUNT" />
+			</xs:sequence>
+			<xs:attribute name="PLACE" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MARK_COUNT" type="xs:integer" />
+	<xs:element name="MARK_LIST_COUNT" type="xs:integer" />
+	<xs:element name="MARK_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="MARK" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MARK">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PROD_MARK" />
+				<xs:element ref="PRODUCT_COUNT" />
+			</xs:sequence>
+			<xs:attribute name="PLACE" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CRIT_BAR_LIST_COUNT" type="xs:integer" />
+	<xs:element name="CRIT_BAR_LIST">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="CRIT_LIST_COUNT" type="xs:integer" />
+	<xs:element name="CRIT_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="CRIT" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CRIT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CRIT_ID" />
+				<xs:element ref="CRIT_NAME" />
+				<xs:element ref="CRIT_TYPE" />
+				<xs:element ref="PLAGE_LIST_COUNT" />
+				<xs:element ref="PLAGE_LIST" />
+			</xs:sequence>
+			<xs:attribute name="PLACE" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CRIT_ID" type="xs:integer" />
+	<xs:element name="CRIT_NAME" type="xs:string" />
+	<xs:element name="CRIT_TYPE" type="xs:integer" />
+	<xs:element name="PLAGE_LIST_COUNT" type="xs:integer" />
+	<xs:element name="PLAGE_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PLAGE" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PLAGE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element ref="PLAGE_ID" />
+					<xs:sequence>
+						<xs:element ref="PLAGE_MIN" />
+						<xs:element ref="PLAGE_MAX" />
+					</xs:sequence>
+				</xs:choice>
+				<xs:element ref="PLAGE_NAME" />
+				<xs:element ref="PRODUCT_COUNT" />
+			</xs:sequence>
+			<xs:attribute name="PLACE" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PLAGE_ID" type="xs:integer" />
+	<xs:element name="PLAGE_MIN" type="xs:integer" />
+	<xs:element name="PLAGE_MAX" type="xs:integer" />
+	<xs:element name="PLAGE_NAME" type="xs:string" />
+	<xs:element name="POPULAR_CAT_LIST_COUNT" type="xs:integer" />
+	<xs:element name="POPULAR_CAT_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="CAT" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PRODUCT_LIST_COUNT" type="xs:integer" />
+	<xs:element name="PRODUCT_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="PRODUCT" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PRODUCT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PROD_ID" />
+				<xs:element ref="PROD_BASE_ID" />
+				<xs:element ref="PROD_MARK" />
+				<xs:element ref="PROD_WITH_CARAC" />
+				<xs:element ref="PROD_MASQUE" />
+				<xs:element ref="PROD_GARANTIE" />
+				<xs:element ref="PROD_DISPO_FORMAT" />
+				<xs:element ref="PROD_DISPO_VALUE" />
+				<xs:element ref="PROD_DELIVERY_FORMAT" />
+				<xs:element ref="PROD_DELIVERY_VALUE" />
+				<xs:element ref="PROD_OCCASION" />
+				<xs:element ref="PROD_SOLDE" />
+				<xs:element ref="PROD_PRIVE" />
+				<xs:element ref="CAT_ID_INTERNE" />
+				<xs:element ref="CAT_ID" />
+				<xs:element ref="CAT_SINGLE_NAME" />
+				<xs:element ref="CAT_URL" />
+				<xs:element ref="SHOP_ID" />
+				<xs:element ref="SHOP_VARS" />
+				<xs:element ref="SHOP_LOGO" />
+				<xs:element ref="SHOP_NAME" />
+				<xs:element ref="SHOP_GLOBAL" />
+				<xs:element ref="SHOP_MEDIATION" />
+				<xs:element ref="SHOP_PAYS" />
+				<xs:element ref="SHOP_LABEL_VALID" />
+				<xs:element ref="SHOP_LABEL_DEBUT" />
+				<xs:element ref="SHOP_LABEL_FIN" />
+				<xs:element ref="PROD_EURO_PRICE" />
+				<xs:element ref="PROD_EURO_FP" />
+				<xs:element ref="PROD_EURO_DISCOUNT" />
+				<xs:element ref="PROD_D3E" />
+				<xs:element ref="PROD_INTL_DEVISE" />
+				<xs:element ref="PROD_INTL_PRICE" />
+				<xs:element ref="PROD_INTL_FP" />
+				<xs:element ref="PROD_CAT_SHOP" />
+				<xs:element ref="PROD_ALPHA1" />
+				<xs:element ref="PROD_ALPHA2" />
+				<xs:element ref="PROD_EAN13" />
+				<xs:element ref="PROD_REF_INTERNE" />
+				<xs:element ref="PROD_REF" />
+				<xs:element ref="PROD_URL" />
+				<xs:element ref="PROD_IMG" />
+				<xs:element ref="PROD_DESIGNATION" />
+				<xs:element ref="PROD_DESCRIPTION" />
+				<xs:element ref="PROD_EXTRAS" />
+				<xs:element ref="OFFRE_COUNT" />
+				<xs:element ref="SHOP_COUNT" />
+				<xs:element ref="PRICE_MIN" />
+				<xs:element ref="PRICE_MAX" />
+				<xs:element ref="GROUP_SOLDE" />
+				<xs:sequence minOccurs="0">
+					<xs:element ref="OFFRE_LIST" />
+					<xs:element ref="SHORTLINKS_COUNT" />
+				</xs:sequence>
+				<xs:element minOccurs="0" ref="REVIEWS" />
+				<xs:element ref="WORD_LIST" />
+			</xs:sequence>
+			<xs:attribute name="PLACE" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PROD_BASE_ID" type="xs:integer" />
+	<xs:element name="PROD_WITH_CARAC" type="xs:integer" />
+	<xs:element name="PROD_MASQUE" type="xs:integer" />
+	<xs:element name="PROD_GARANTIE" type="xs:integer" />
+	<xs:element name="PROD_DISPO_FORMAT" type="xs:integer" />
+	<xs:element name="PROD_DISPO_VALUE" type="xs:string" />
+	<xs:element name="PROD_DELIVERY_FORMAT" type="xs:integer" />
+	<xs:element name="PROD_DELIVERY_VALUE" type="xs:string" />
+	<xs:element name="PROD_OCCASION" type="xs:integer" />
+	<xs:element name="PROD_PRIVE" type="xs:integer" />
+	<xs:element name="CAT_SINGLE_NAME" type="xs:string" />
+	<xs:element name="SHOP_GLOBAL" type="xs:decimal" />
+	<xs:element name="SHOP_MEDIATION" type="xs:integer" />
+	<xs:element name="SHOP_PAYS" type="xs:NCName" />
+	<xs:element name="SHOP_LABEL_VALID" type="xs:integer" />
+	<xs:element name="SHOP_LABEL_DEBUT">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="SHOP_LABEL_FIN">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="PROD_EURO_PRICE" type="xs:decimal" />
+	<xs:element name="PROD_EURO_FP" type="xs:decimal" />
+	<xs:element name="PROD_EURO_DISCOUNT" type="xs:decimal" />
+	<xs:element name="PROD_D3E" type="xs:decimal" />
+	<xs:element name="PROD_INTL_DEVISE" type="xs:NCName" />
+	<xs:element name="PROD_INTL_PRICE" type="xs:decimal" />
+	<xs:element name="PROD_INTL_FP" type="xs:decimal" />
+	<xs:element name="PROD_CAT_SHOP" type="xs:string" />
+	<xs:element name="PROD_ALPHA1">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="PROD_ALPHA2">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="PROD_EAN13" type="xs:string" />
+	<xs:element name="PROD_REF_INTERNE" type="xs:NMTOKEN" />
+	<xs:element name="PROD_REF" type="xs:string" />
+	<xs:element name="PROD_URL" type="xs:anyURI" />
+	<xs:element name="PROD_IMG" type="xs:string" />
+	<xs:element name="PROD_DESIGNATION" type="xs:string" />
+	<xs:element name="PROD_DESCRIPTION" type="xs:string" />
+	<xs:element name="PROD_EXTRAS">
+		<xs:complexType />
+	</xs:element>
+	<xs:element name="GROUP_SOLDE" type="xs:integer" />
+	<xs:element name="OFFRE_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="OFFRE" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OFFRE">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SHOP_ID" />
+				<xs:element ref="SHOP_LOGO" />
+				<xs:element ref="SHOP_NAME" />
+				<xs:element ref="SHOP_VARS" />
+				<xs:element ref="PROD_ID" />
+				<xs:element ref="OFFRE_PRICE" />
+				<xs:element ref="PROD_SOLDE" />
+				<xs:element ref="CAT_ID" />
+			</xs:sequence>
+			<xs:attribute name="PLACE" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OFFRE_PRICE" type="xs:decimal" />
+	<xs:element name="SHORTLINKS_COUNT" type="xs:integer" />
+	<xs:element name="REVIEWS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="COUNT" />
+				<xs:element ref="AVERAGE" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="COUNT" type="xs:integer" />
+	<xs:element name="AVERAGE" type="xs:integer" />
+	<xs:element name="WORD_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="WORD" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="WORD">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="FIELD" />
+				<xs:element ref="START" />
+				<xs:element ref="LENGTH" />
+			</xs:sequence>
+			<xs:attribute name="PLACE" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FIELD" type="xs:integer" />
+	<xs:element name="START" type="xs:integer" />
+	<xs:element name="LENGTH" type="xs:integer" />
+	<xs:element name="UNIVERS_LIST_COUNT" type="xs:integer" />
+	<xs:element name="UNIVERS_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="UNIVERS" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="UNIVERS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CAT_ID_INTERNE" />
+				<xs:element ref="CAT_ID" />
+				<xs:element ref="CAT_NAME" />
+				<xs:element ref="CAT_URL" />
+				<xs:element ref="CAT_LIST_COUNT" />
+				<xs:element ref="CAT_LIST" />
+			</xs:sequence>
+			<xs:attribute name="PLACE" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CAT_LIST_COUNT" type="xs:integer" />
+	<xs:element name="CAT_LIST">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="CAT" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CAT_ID" type="xs:integer" />
+	<xs:element name="CAT_NAME" type="xs:string" />
+	<xs:element name="CAT_URL" type="xs:string" />
+	<xs:element name="PRODUCT_COUNT" type="xs:integer" />
+	<xs:element name="OFFRE_COUNT" type="xs:integer" />
+	<xs:element name="SHOP_COUNT" type="xs:integer" />
+	<xs:element name="PRICE_MIN" type="xs:decimal" />
+	<xs:element name="PRICE_MAX" type="xs:decimal" />
+	<xs:element name="PROD_MARK" type="xs:NCName" />
+	<xs:element name="CAT">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CAT_ID_INTERNE" />
+				<xs:element ref="CAT_ID" />
+				<xs:element ref="CAT_NAME" />
+				<xs:element ref="CAT_URL" />
+				<xs:element ref="PRODUCT_COUNT" />
+				<xs:element minOccurs="0" ref="PROD_DBG_CLIC" />
+			</xs:sequence>
+			<xs:attribute name="PLACE" use="required" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PROD_DBG_CLIC" type="xs:integer" />
+	<xs:element name="PROD_ID" type="xs:NMTOKEN" />
+	<xs:element name="PROD_SOLDE" type="xs:integer" />
+	<xs:element name="CAT_ID_INTERNE" type="xs:integer" />
+	<xs:element name="SHOP_ID" type="xs:integer" />
+	<xs:element name="SHOP_VARS" type="xs:NMTOKEN" />
+	<xs:element name="SHOP_LOGO" type="xs:integer" />
+	<xs:element name="SHOP_NAME" type="xs:string" />
+</xs:schema>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.leguide.backoffice.karaf.bundle.business</groupId>
+		<artifactId>parent</artifactId>
+		<version>19.21.2</version>
+	</parent>
+
+	<artifactId>models</artifactId>
+	<packaging>bundle</packaging>
+
+	<name>${application.name} :: ${project.name} :: ${project.artifactId}</name>
+	<description>Business models</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-bean-validator</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<build-helper-maven-plugin.skipAttach.configuration>true</build-helper-maven-plugin.skipAttach.configuration>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Import-Package>
+						com.fasterxml.jackson.annotation,
+						*
+						</Import-Package>
+						<Export-Package>
+							com.leguide.backoffice.karaf.business.models.*,
+							com.leguide.backoffice.karaf.business.exception,
+                            com.leguide.backoffice.karaf.business.error
+						</Export-Package>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+

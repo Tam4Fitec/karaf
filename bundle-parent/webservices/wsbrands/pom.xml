@@ -1,0 +1,209 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.leguide.backoffice.karaf.bundle.webservices</groupId>
+        <artifactId>parent</artifactId>
+        <version>19.21.2</version>
+    </parent>
+    <artifactId>wsbrands</artifactId>
+    <packaging>bundle</packaging>
+
+    <name>${application.name} :: ${project.name} :: ${project.artifactId}</name>
+    <description>CXF services - WSBrands</description>
+
+    <properties>
+        <!-- set to false to inclue any configuration files. See parent - profiles -->
+        <build-helper-maven-plugin.skipAttach.configuration>true</build-helper-maven-plugin.skipAttach.configuration>
+
+        <mockito.version>1.9.0</mockito.version>
+
+        <cglib.version>2.2.2</cglib.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <!-- config and instructions here -->
+                    <instructions>
+                        <Import-Package>
+                            org.apache.cxf.interceptor,
+                            org.apache.cxf.jaxrs,
+                            org.apache.cxf.jaxrs.impl,
+                            org.apache.cxf.jaxrs.impl.tl,
+                            javax.servlet.http,
+                            com.mysql.jdbc,
+                            org.apache.commons.collections.iterators,
+                            com.leguide.common.libraries.normalizer,
+                            com.leguide.common.libraries.normalizer.impl,
+                            com.leguide.backoffice.karaf.brands.common.business.model,
+                            com.leguide.backoffice.karaf.brands.common.business.model.enums,
+                            com.leguide.backoffice.karaf.brands.common.exception,
+                            com.leguide.backoffice.karaf.brands.common.filters,
+                            com.leguide.backoffice.karaf.brands.common.utils.enums,
+                            com.leguide.backoffice.karaf.dao.brands,
+                            com.leguide.backoffice.karaf.dao.brands.impl,
+                            com.sdicons.json.model,
+                            org.aopalliance.aop,
+                            org.springframework.aop,
+                            org.springframework.aop.framework,
+                            org.springframework.aop.aspectj.autoproxy,
+                            *
+                        </Import-Package>
+                        <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.leguide.common.libraries</groupId>
+            <artifactId>normalizer</artifactId>
+            <version>${normalizer.version}</version>
+            <type>bundle</type>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.sun.jmx</groupId>
+                    <artifactId>jmxri</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.jms</groupId>
+                    <artifactId>jms</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jdmk</groupId>
+                    <artifactId>jmxtools</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${common-lang.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-dbcp</artifactId>
+            <version>7.0.22</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-core</artifactId>
+            <version>${ehcache.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-web</artifactId>
+            <version>${ehcache.web.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>nl.jqno.equalsverifier</groupId>
+            <artifactId>equalsverifier</artifactId>
+            <version>1.1.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${cglib.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${common-collection.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sdicons.jsontools</groupId>
+            <artifactId>jsontools-core</artifactId>
+            <version>${com.sdicons.jsontools.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.leguide.backoffice.karaf.bundle.dao</groupId>
+            <artifactId>brands</artifactId>
+            <version>${project.version}</version>
+            <type>bundle</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.leguide.backoffice.karaf.bundle.libraries</groupId>
+            <artifactId>brands.common</artifactId>
+            <version>${project.version}</version>
+            <type>bundle</type>
+        </dependency>
+
+    </dependencies>
+</project>

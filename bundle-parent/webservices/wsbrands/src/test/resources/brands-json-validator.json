@@ -1,0 +1,62 @@
+{"name":"Validator",
+ "type":"let",
+ "*":"start",
+ "rules":
+[
+    ######## Brand Object ########
+    {
+        "name":"start",
+        "type":"properties",
+        "pairs":[{"key":"brand", "optional":false, "rule":{"type":"ref","*":"brand-single-or-list"}}]
+    },
+
+    ######## Single brand or brand list validation ########
+    {
+        "name":"brand-single-or-list",
+        "type":"or",
+        "rules":[{"type":"ref","*":"brand-validator"},{"type":"ref","*":"brand-list"}]
+    },
+
+    ######## List of brands validation ########
+    {
+        "name":"brand-list",
+        "type":"and",
+        "rules":[{"type":"array"},{"type":"content","rule":{"type":"ref","*":"brand-validator"}}]
+    },
+
+    ######## Brand validation ########
+    {
+        "name":"brand-validator",
+        "type":"properties",
+        "pairs":[{"key":"name", "optional":false, "rule":{"type":"string"}}, 
+                 {"key":"@activationDate", 
+                        "optional":true,
+                        "rule":{"type":"custom","class":"com.leguide.backoffice.karaf.webservices.wsbrands.api.validator.JsonDateValidator"}}, 
+                 {"key":"alias", "optional":true, "rule":{"type":"ref","*":"alias-single-or-list"}}]
+    },
+    
+    ######## Single alias or alias list validation ########
+    {
+        "name":"alias-single-or-list",
+        "type":"or",
+        "rules":[{"type":"ref","*":"alias-validator"},{"type":"ref","*":"alias-list"}]
+    },
+   
+    ######## List of aliases validation ########
+    {
+        "name":"alias-list",
+        "type":"and",
+        "rules":[{"type":"array"},{"type":"content","rule":{"type":"ref","*":"alias-validator"}}]
+    },   
+    
+    ######## Alias validation ########
+    {
+        "name":"alias-validator",
+        "type":"properties",
+        "pairs":[{"key":"name", "optional":false, "rule":{"type":"string"}}, 
+                 {"key":"@activationDate", 
+                        "optional":true,
+                        "rule":{"type":"custom","class":"com.leguide.backoffice.karaf.webservices.wsbrands.api.validator.JsonDateValidator"}}]
+    }    
+]
+}

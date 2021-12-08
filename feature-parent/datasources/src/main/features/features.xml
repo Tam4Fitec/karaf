@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="backoffice-${parent.version}">
+
+   <feature name="datasource-utils" version="${project.version}">
+      <feature>transaction</feature>
+      <bundle>wrap:mvn:net.sourceforge.jtds/jtds/1.2.8</bundle>
+      <bundle>mvn:mysql/mysql-connector-java/${mysql-connector.version}</bundle>
+      <bundle>wrap:mvn:org.postgresql/postgresql/9.3-1101-jdbc4</bundle>
+      <bundle>mvn:commons-lang/commons-lang/${common-lang.version}</bundle>
+      <bundle>mvn:commons-pool/commons-pool/${common-pool.version}</bundle>
+      <bundle>mvn:commons-dbcp/commons-dbcp/${common-dbcp.version}</bundle>
+      <bundle>wrap:mvn:com.leguide.transverse/crypto-sdk/1.1</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.datasources/utils/${project.version}</bundle>
+   </feature>
+
+   <feature name="datasources" version="${project.version}" description="Backoffice datasources">
+      <feature>datasource-brands</feature>
+      <feature>datasource-lgintegration</feature>
+      <feature>datasource-lgbase</feature>
+      <feature>datasource-lgshop</feature>
+   </feature>
+
+   <feature name="datasource-brands" version="${project.version}" description="Datasource for brands database">
+      <feature>datasource-utils</feature>
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.datasources.brands.cfg">mvn:com.leguide.backoffice.karaf.bundle.datasources/brands/${project.version}/cfg</configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.datasources/brands/${project.version}</bundle>
+   </feature>
+
+   <feature name="datasource-lgintegration" version="${project.version}" description="Datasource for lgintegration database">
+      <feature>datasource-utils</feature>
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.datasources.lgintegration.cfg">mvn:com.leguide.backoffice.karaf.bundle.datasources/lgintegration/${project.version}/cfg
+      </configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.datasources/lgintegration/${project.version}</bundle>
+   </feature>
+   <feature name="datasource-lgbase" version="${project.version}" description="Datasource for lgbase database">
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.datasources.lgbase.cfg">mvn:com.leguide.backoffice.karaf.bundle.datasources/lgbase/${project.version}/cfg</configfile>
+      <feature>datasource-utils</feature>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.datasources/lgbase/${project.version}</bundle>
+   </feature>
+   <feature name="datasource-lgshop" version="${project.version}" description="Datasource for lgshop database">
+      <feature>datasource-utils</feature>
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.datasources.lgshop.cfg">mvn:com.leguide.backoffice.karaf.bundle.datasources/lgshop/${project.version}/cfg</configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.datasources/lgshop/${project.version}</bundle>
+   </feature>
+</features>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.leguide.backoffice.karaf.bundle</groupId>
+		<artifactId>bundle-parent</artifactId>
+		<version>19.21.2</version>
+	</parent>
+	<groupId>com.leguide.backoffice.karaf.bundle.offer</groupId>
+	<artifactId>parent</artifactId>
+	<packaging>pom</packaging>
+
+	<name>${application.name} :: ${project.name} :: ${project.artifactId}</name>
+	<description>Bundles for offer project</description>
+
+	<modules>
+		<module>offer-data-collection</module>
+	</modules>
+
+	<properties>
+		<build-helper-maven-plugin.skipAttach.configuration>true</build-helper-maven-plugin.skipAttach.configuration>
+		<project.name>offer</project.name>
+	</properties>
+</project>

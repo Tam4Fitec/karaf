@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<blueprint default-activation="eager" xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" xmlns:jpa="http://aries.apache.org/xmlns/jpa/v1.0.0" xmlns:tx="http://aries.apache.org/xmlns/transactions/v1.0.0">
+
+   <bean id="clientDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.LgBaseClientDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="lgAccountDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.LgbaseAccountDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="accountStoreDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.LgbaseAccountStoreDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="accountClientDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.LgbaseAccountClientDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="storeDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.StoreDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="usersAccountDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.UsersAccountDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="usersDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.UsersDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="usersRoleDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.UsersRoleDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="usersOptInOutDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.UsersOptInOutDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="refRolesDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.RefRolesDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="contractStoreConsumptionDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.LgbaseContractStoreConsumptionDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="contractStorePurchaseDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.LgbaseContractStorePurchaseDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="contractStorePricingDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.LgbaseContractStorePricingDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <bean id="invoiceDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.LgbaseInvoiceDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <reference id="lgBaseDataSource" interface="javax.sql.DataSource" filter="(osgi.jndi.service.name=jdbc/lgbase)"/>
+
+   <bean id="jdbcTpl" class="org.springframework.jdbc.core.JdbcTemplate">
+      <argument ref="lgBaseDataSource"/>
+   </bean>
+
+   <bean id="cpcDao" class="com.leguide.backoffice.karaf.dao.lgbase.cpc.CpcDAO">
+      <property name="tpl" ref="jdbcTpl"/>
+   </bean>
+
+   <bean id="ecritureDao" class="com.leguide.backoffice.karaf.dao.lgbase.impl.LgbaseEcritureDaoImpl">
+      <jpa:context unitname="lgbaseXA" property="em"/>
+      <tx:transaction method="*" value="Required"/>
+   </bean>
+
+   <service ref="clientDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgBaseClientDao"/>
+   <service ref="lgAccountDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseAccountDao"/>
+   <service ref="accountStoreDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseAccountStoreDao"/>
+   <service ref="accountClientDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseAccountClientDao"/>
+
+   <service ref="storeDao" interface="com.leguide.backoffice.karaf.dao.lgbase.StoreDao"/>
+
+   <service ref="usersDao" interface="com.leguide.backoffice.karaf.dao.lgbase.UsersDao"/>
+   <service ref="usersAccountDao" interface="com.leguide.backoffice.karaf.dao.lgbase.UsersAccountDao"/>
+   <service ref="usersRoleDao" interface="com.leguide.backoffice.karaf.dao.lgbase.UsersRoleDao"/>
+   <service ref="usersOptInOutDao" interface="com.leguide.backoffice.karaf.dao.lgbase.UsersOptInOutDao"/>
+   <service ref="refRolesDao" interface="com.leguide.backoffice.karaf.dao.lgbase.RefRolesDao"/>
+
+   <service ref="cpcDao" interface="com.leguide.backoffice.karaf.dao.lgbase.cpc.ICpcDAO"/>
+
+   <service ref="contractStoreConsumptionDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseContractStoreConsumptionDao"/>
+   <service ref="contractStorePurchaseDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseContractStorePurchaseDao"/>
+   <service ref="contractStorePricingDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseContractStorePricingDao"/>
+
+   <service ref="invoiceDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseInvoiceDao"/>
+   <service ref="ecritureDao" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseEcritureDao"/>
+
+</blueprint>

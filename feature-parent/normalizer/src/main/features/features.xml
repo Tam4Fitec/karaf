@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="backoffice-${project.version}">
+
+    <repository>mvn:org.apache.camel.karaf/apache-camel/${camel.version}/xml/features</repository>
+    <repository>mvn:com.leguide.backoffice.karaf.feature/datasources/${project.version}/xml/features</repository>
+
+    <feature name="normalizer" version="${project.version}" description="Services for BackOffice normalizer">
+        <bundle>mvn:commons-lang/commons-lang/${common-lang.version}</bundle>
+        <bundle>mvn:com.leguide.common.libraries/normalizer/${normalizer.version}</bundle>
+    </feature>
+</features>

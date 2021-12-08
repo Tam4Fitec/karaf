@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.leguide.backoffice.karaf.bundle.libraries</groupId>
+		<artifactId>parent</artifactId>
+		<version>19.21.2</version>
+	</parent>
+	<artifactId>brands.common</artifactId>
+	<packaging>bundle</packaging>
+
+	<name>${application.name} :: ${project.artifactId}</name>
+	<description>Common classes for brands features</description>
+	<properties>
+		<mockito.version>1.9.0</mockito.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<version>2.3.6</version>
+				<configuration>
+					<instructions>
+						<Import-Package>
+							*
+						</Import-Package>
+						<Export-Package>
+							com.leguide.backoffice.karaf.brands.common.business.model,
+							com.leguide.backoffice.karaf.brands.common.business.model.enums,
+							com.leguide.backoffice.karaf.brands.common.exception,
+							com.leguide.backoffice.karaf.brands.common.filters,
+							com.leguide.backoffice.karaf.brands.common.utils.enums
+						</Export-Package>
+						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>${mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>nl.jqno.equalsverifier</groupId>
+			<artifactId>equalsverifier</artifactId>
+			<version>1.1.3</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+</project>

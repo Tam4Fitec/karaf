@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+	<xs:element name="brandsList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="brand" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="brand">
+		<xs:complexType>
+			<xs:sequence>
+			    <xs:element name="name" type="xs:string" />
+			    <xs:element name="seoName" type="xs:string" minOccurs="0" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="alias" />				
+			</xs:sequence>
+			<xs:attribute name="activationDate" type="xs:string" />
+			<xs:attribute name="temporaryId" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="alias">
+		<xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string" />
+			</xs:sequence>
+			<xs:attribute name="activationDate" type="xs:string" />
+			<xs:attribute name="temporaryId" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

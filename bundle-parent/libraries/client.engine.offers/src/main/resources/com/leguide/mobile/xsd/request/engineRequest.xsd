@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+
+	<xs:complexType abstract="true" name="request">
+		<xs:sequence>
+			<xs:element id="function" ref="kFunc" />
+			<xs:element ref="kPays" />
+			<xs:element ref="kZone" />
+
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="ListOffersRequest" abstract="false">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="request">
+					<xs:sequence>
+						<xs:element ref="kSite" />
+						<xs:element ref="kProtocol" />
+						<xs:element ref="kProdCount" />
+						<xs:element ref="kPage" />
+						<xs:element ref="kSort" />
+						<xs:element ref="kGroup" />
+						<xs:element ref="kOccasion" />
+						<xs:element ref="kDiscountMin" />
+						<xs:element ref="kDiscountMax" />
+						<xs:element ref="kPhp" />
+						<xs:element ref="kBaseID" />
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ProductsNetRequest" abstract="false">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="request">
+					<xs:sequence>
+						<xs:element ref="kSite" />
+						<xs:element ref="kProtocol" />
+						<xs:element ref="kProdCount" />
+						<xs:element ref="kPage" />
+						<xs:element ref="kSort" />
+						<xs:element ref="kGroup" />
+						<xs:element ref="kOccasion" />
+						<xs:element ref="kDiscountMin" />
+						<xs:element ref="kDiscountMax" />
+						<xs:element ref="kPhp" />
+						<xs:element ref="kCat" />
+						<xs:element ref="kMark" />
+						<xs:element ref="kWords" />
+						<xs:element ref="kPhonetic" />
+						<xs:element ref="kFilter" />
+						<xs:element ref="kPriceMin" minOccurs="0" maxOccurs="1" />
+						<xs:element ref="kPriceMax" minOccurs="0" maxOccurs="1" />
+						<xs:element ref="kMarkCount" />
+						<xs:element ref="kOnlyCat" />
+						<xs:element ref="kDateMin" minOccurs="0" maxOccurs="1" />
+						<xs:element ref="kDateMax" minOccurs="0" maxOccurs="1" />
+						<xs:element ref="kCatCount" />
+						<xs:element ref="kCriteres" />
+						<xs:element ref="kShortlinks" />
+						<xs:element ref="kReviewsSources" />
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ProductInfoRequest" abstract="false">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="request">
+					<xs:sequence>
+						<xs:element ref="kProduct" />
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="StartPageRequest" abstract="false">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="request">
+					<xs:sequence>
+						<xs:element ref="kSite" />
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- COMMON Elements -->
+	<xs:element name="kFunc" type="xs:NCName" />
+	<xs:element name="kPays" type="xs:NCName" />
+	<xs:element name="kZone" type="xs:int" />
+	<xs:element name="kSite" type="xs:int" />
+	<xs:element name="kProtocol" type="xs:string" />
+	<xs:element name="kOccasion" type="xs:int" />
+	<xs:element name="kProdCount" type="xs:int" />
+	<xs:element name="kPage" type="xs:int" />
+	<xs:element name="kSort" type="xs:int" />
+	<xs:element name="kGroup" type="xs:int" />
+	<xs:element name="kDiscountMin" type="xs:int" />
+	<xs:element name="kDiscountMax" type="xs:int" />
+	<xs:element name="kPhp" type="xs:int" />
+
+	<!-- Liste_offres Elements -->
+	<xs:element name="kBaseID" type="xs:long" />
+
+	<!-- products_net Elements -->
+	<xs:element name="kCat" type="xs:string" />
+	<xs:element name="kMark" type="xs:string" />
+	<xs:element name="kWords" type="xs:string" />
+	<xs:element name="kPhonetic" type="xs:short" />
+	<xs:element name="kFilter" type="xs:int" />
+	<xs:element name="kPriceMin" type="xs:float" />
+	<xs:element name="kPriceMax" type="xs:float" />
+	<xs:element name="kMarkCount" type="xs:int" />
+	<xs:element name="kOnlyCat" type="xs:int" />
+	<xs:element name="kDateMin" type="xs:string" />
+	<xs:element name="kDateMax" type="xs:string" />
+	<xs:element name="kCatCount" type="xs:int" />
+	<xs:element name="kCriteres" type="xs:string" />
+	<xs:element name="kShortlinks" type="xs:short" />
+	<xs:element name="kReviewsSources" type="xs:short" />
+
+	<!-- prod_info Elements -->
+	<xs:element name="kProduct" type="xs:string" />
+
+</xs:schema>

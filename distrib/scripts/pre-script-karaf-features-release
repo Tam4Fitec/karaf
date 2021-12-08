@@ -1,0 +1,27 @@
+#!/bin/bash
+version=$FEATURES_VERSION
+echo "Build features with version : " $version
+version_prefix=${version:0:${#version}-2}
+branch=${version_prefix}.x
+if [[ $version == *.0 ]]
+then
+        new_version=$(echo $version_prefix | awk -F. -v OFS=. 'NF==1{print ++$NF}; NF>1{if(length($NF+1)>length($NF))$(NF-1)++; $NF=sprintf("%0*d", length($NF), ($NF+1)%(10^length($NF))); print}').0-SNAPSHOT
+        echo "Major version, create a new branch " $branch
+        git checkout -b $branch
+        git push origin $branch
+        git checkout master
+        echo "Update master with version " $new_version
+        mvn versions:set -DnewVersion=$new_version
+        git commit -a -m "Release features $features_version - update master version to $new_version"
+        git push
+else
+        echo "Minor version"
+fi
+git checkout $branch
+mvn versions:set -DnewVersion=$version
+mvn clean install -DskipTests -P release
+cd feature-parent/backoffice-feature
+mvn deploy -P release
+cd ../..
+git commit -a -m "Release features $features_version - update branch version to $version"
+git push

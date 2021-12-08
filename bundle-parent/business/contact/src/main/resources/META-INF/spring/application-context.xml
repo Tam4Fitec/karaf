@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:cxf="http://camel.apache.org/schema/cxf"
+       xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+	   xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/osgi-compendium http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
+        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd"
+       default-lazy-init="false">
+
+    <context:annotation-config />
+    <context:component-scan base-package="com.leguide.backoffice.karaf.bundle.business.contact" />
+
+	<osgix:cm-properties id="business.services.properties" persistent-id="com.leguide.backoffice.karaf.bundle.business.parent" />
+	<context:property-placeholder properties-ref="business.services.properties" />
+
+	<osgi:reference id="contactDao" interface="com.leguide.backoffice.karaf.bundle.dao.facade.ContactDao" />
+    <osgi:reference id="hazelcastInstance" interface="com.hazelcast.core.HazelcastInstance"/>
+	<bean id="hazelcast" class="org.apache.camel.component.hazelcast.HazelcastComponent">
+        <property name="hazelcastInstance" ref="hazelcastInstance"/>
+    </bean>
+
+	<bean id="contactServiceImpl" class="com.leguide.backoffice.karaf.bundle.business.contact.services.impl.ContactServiceImpl" >
+		<property name="contactDao" ref="contactDao"/>
+	</bean>
+	
+	<osgi:reference id="lgAccountStoreDAO" interface="com.leguide.backoffice.karaf.dao.lgbase.LgbaseAccountStoreDao"/>
+	<osgi:reference id="shopSiteDao" interface="com.leguide.backoffice.karaf.bundle.dao.facade.ShopSiteDao" />
+
+    <bean id="smartFocusBuilder" class="com.leguide.backoffice.karaf.bundle.business.contact.routes.beans.SmartFocusBuilder">
+        <property name="lgAccountStoreDAO" ref="lgAccountStoreDAO"/>
+        <property name="shopSiteDao" ref="shopSiteDao"/>
+    </bean>
+</beans>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+<persistence xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+                        http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+
+   <persistence-unit name="lgshopXA" transaction-type="JTA">
+      <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+      <jta-data-source>osgi:service/javax.sql.XADataSource/(osgi.jndi.service.name=jdbc/lgshopXA)</jta-data-source>
+      <!--         <non-jta-data-source>osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=jdbc/lgshop)</non-jta-data-source> -->
+
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopLightShopsite</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsite</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteAlias</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteCatalog</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteDelivery</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteInternalNotification</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteListing</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsitePrivacyPolicy</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteRelation</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteRelationKey</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteReportSubscription</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteReportSubscriptionKey</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteBlackAndWhiteList</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteBlackAndWhiteListKey</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteSandbox</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteSociety</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteState</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteStateHistory</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.shopsite.LgshopShopsiteUrl</class>
+
+      <class>com.leguide.backoffice.karaf.models.lgshop.referentiel.LgshopRefCountry</class>
+
+      <class>com.leguide.backoffice.karaf.models.lgshop.referentiel.LgshopRefLabel</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.referentiel.LgshopRefLanguage</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.referentiel.LgshopRefKSite</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.referentiel.LgshopRefKSiteLabel</class>
+      <class>com.leguide.backoffice.karaf.models.lgshop.referentiel.LgshopRefKSiteLabelKey</class>
+      <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+      <properties>
+         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+      </properties>
+   </persistence-unit>
+</persistence>

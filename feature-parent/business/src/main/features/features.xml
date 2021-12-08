@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="backoffice-${project.version}">
+
+   <repository>mvn:org.apache.camel.karaf/apache-camel/${camel.version}/xml/features</repository>
+
+   <feature name="business" version="${project.version}" description="BackOffice Business Feature">
+      <feature version="${project.version}">business-global</feature>
+      <feature version="${project.version}">business-merchant</feature>
+      <feature version="${project.version}">business-contact</feature>
+   </feature>
+
+   <feature name="business-global" version="${project.version}" description="BackOffice Business - global">
+      <feature version="${project.version}">hazelcast-service</feature>
+      <feature version="${project.version}">lgbaseDAO</feature>
+      <feature version="${project.version}">lgshopDAO</feature>
+
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.business.parent.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.business/parent/${project.version}/cfg
+      </configfile>
+
+      <feature version="${project.version}">lgintegrationDAO</feature>
+
+      <bundle>mvn:commons-pool/commons-pool/${common-pool.version}</bundle>
+      <bundle>mvn:commons-dbcp/commons-dbcp/${common-dbcp.version}</bundle>
+      <bundle>wrap:mvn:mysql/mysql-connector-java/${mysql-connector.version}</bundle>
+      <bundle>mvn:commons-lang/commons-lang/${common-lang.version}</bundle>
+
+      <bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+
+      <feature>camel-core</feature>
+      <feature>camel-spring</feature>
+      <feature>camel-gson</feature>
+      <feature>camel-http</feature>
+      <feature>camel-hazelcast</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+      <feature version="${spring.features.version}">spring-aspects</feature>
+      <feature version="${spring.features.version}">spring-web</feature>
+
+      <feature>camel-jackson</feature>
+      <feature>camel-jms</feature>
+
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/facade/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.dao/legacy/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models/${project.version}</bundle>
+
+   </feature>
+
+   <feature name="business-merchant" version="${project.version}" description="BackOffice Business Services Merchant">
+      <feature version="${project.version}">business-global</feature>
+
+      <feature version="${project.version}">hazelcast-service</feature>
+      <feature version="${project.version}">rules-engine-service</feature>
+      <feature version="${project.version}">ksite</feature>
+      <feature version="${project.version}">jolokia</feature>
+
+      <bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.9.2</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business.services/merchant/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models-marshalling/${project.version}</bundle>
+   </feature>
+
+   <feature name="business-contact" version="${project.version}" description="BackOffice Business Services Contact">
+      <feature version="${project.version}">business-global</feature>
+
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business.services/contact/${project.version}</bundle>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/models-marshalling/${project.version}</bundle>
+   </feature>
+
+   <feature name="business-mdmtocrm" version="${project.version}" description="BackOffice Business Services MdmToCrm">
+      <feature version="${project.version}">business-global</feature>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business.services/mdmtocrm/${project.version}</bundle>
+   </feature>
+
+   <feature name="business-catalog-offercount" version="${project.version}" description="BackOffice Business Services Infomag">
+      <feature version="${project.version}">hazelcast-service</feature>
+      <feature>camel-core</feature>
+      <feature>camel-spring</feature>
+      <feature version="${spring.features.version}">spring-jdbc</feature>
+
+      <bundle>mvn:commons-pool/commons-pool/${common-pool.version}</bundle>
+      <bundle>mvn:commons-dbcp/commons-dbcp/${common-dbcp.version}</bundle>
+      <bundle>mvn:commons-lang/commons-lang/${common-lang.version}</bundle>
+      <bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+
+      <feature>datasource-lgintegration</feature>
+      <feature>datasource-lgbe</feature>
+      <feature>search-engine-client-service</feature>
+      <feature>wsstore</feature>
+      <feature version="${project.version}">scheduler</feature>
+      <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.business.catalog.offercount.cfg">
+         mvn:com.leguide.backoffice.karaf.bundle.business/catalog.offercount/${project.version}/cfg
+      </configfile>
+      <bundle>mvn:com.leguide.backoffice.karaf.bundle.business/catalog.offercount/${project.version}</bundle>
+   </feature>
+</features>

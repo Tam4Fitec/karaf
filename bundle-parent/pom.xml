@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>com.leguide.backoffice.karaf</groupId>
+      <artifactId>parent</artifactId>
+      <version>19.21.2</version>
+   </parent>
+
+   <groupId>com.leguide.backoffice.karaf.bundle</groupId>
+   <artifactId>bundle-parent</artifactId>
+   <packaging>pom</packaging>
+
+   <name>${application.name} :: ${project.artifactId}</name>
+   <description>All bundles group by business project</description>
+
+   <modules>
+      <module>libraries</module>
+      <module>normalizer</module>
+      <module>datasources</module>
+      <module>dao</module>
+      <module>webservices</module>
+      <module>services</module>
+      <module>branding</module>
+      <module>business</module>
+      <module>offer</module>
+   </modules>
+
+   <properties>
+      <build-helper-maven-plugin.skipAttach.configuration>true</build-helper-maven-plugin.skipAttach.configuration>
+      <mockito.version>1.9.5</mockito.version>
+   </properties>
+
+   <dependencyManagement>
+      <dependencies>
+         <!-- test dependencies -->
+         <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+         </dependency>
+         <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+         </dependency>
+         <!-- logging -->
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+         </dependency>
+
+
+      </dependencies>
+   </dependencyManagement>
+
+   <dependencies>
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+      </dependency>
+   </dependencies>
+
+   <build>
+
+      <defaultGoal>install</defaultGoal>
+
+      <resources>
+         <resource>
+            <directory>${basedir}/src/main/conf/${confDirectory}</directory>
+            <includes>
+               <include>**/*</include>
+            </includes>
+         </resource>
+         <resource>
+            <directory>${basedir}/src/main/resources</directory>
+            <includes>
+               <include>**/*</include>
+            </includes>
+         </resource>
+      </resources>
+
+      <pluginManagement>
+         <plugins>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <version>${maven-compiler-plugin.version}</version>
+               <configuration>
+                  <source>1.8</source>
+                  <target>1.8</target>
+               </configuration>
+            </plugin>
+
+            <!-- to generate the MANIFEST-FILE of the bundle -->
+            <plugin>
+               <groupId>org.apache.felix</groupId>
+               <artifactId>maven-bundle-plugin</artifactId>
+               <version>${maven-bundle-plugin.version}</version>
+               <extensions>true</extensions>
+               <configuration>
+                  <instructions>
+                     <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+                  </instructions>
+               </configuration>
+            </plugin>
+
+            <!-- Attach additional artifacts to be installed and deployed used for
+               package features.xml for deployment and cfg file for datasource -->
+            <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>build-helper-maven-plugin</artifactId>
+               <version>${build-helper-plugin.version}</version>
+            </plugin>
+
+            <!-- Allows the routes to be run via 'mvn camel:run' -->
+            <plugin>
+               <groupId>org.apache.camel</groupId>
+               <artifactId>camel-maven-plugin</artifactId>
+               <version>${camel.version}</version>
+            </plugin>
+
+         </plugins>
+      </pluginManagement>
+
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>maven-bundle-plugin</artifactId>
+         </plugin>
+
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>attach-configuration</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>attach-artifact</goal>
+                  </goals>
+                  <configuration>
+                     <skipAttach>${build-helper-maven-plugin.skipAttach.configuration}</skipAttach>
+                     <artifacts>
+                        <artifact>
+                           <file>src/main/conf/${confDirectory}/${project.groupId}.${project.artifactId}.cfg</file>
+                           <type>cfg</type>
+                        </artifact>
+                     </artifacts>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
+
+</project>

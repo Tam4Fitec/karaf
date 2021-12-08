@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="backoffice-${project.version}">
+
+	<repository>mvn:org.apache.camel.karaf/apache-camel/${camel.version}/xml/features</repository>
+
+	<feature name="offer" version="${project.version}" description="BackEnd Offer">
+		<feature version="${project.version}">offer-data-collection</feature>
+    </feature>
+
+	<feature name="offer-data-collection" version="${project.version}" description="BackEnd Offer - populates Redis from pixel tracking">
+	 	<feature version="${cellar.version}">cellar</feature>
+	 	<feature>camel-spring</feature>
+        <feature>camel-hazelcast</feature>
+
+		<bundle>mvn:joda-time/joda-time/${joda.version}</bundle>
+		<bundle>mvn:commons-lang/commons-lang/${common-lang.version}</bundle>
+		<bundle dependency='true'>mvn:org.apache.commons/commons-pool2/2.2</bundle>
+	    <bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jedis/2.4.1_1</bundle>
+
+        <configfile finalname="/etc/com.leguide.backoffice.karaf.bundle.offer.datacollection.cfg">mvn:com.leguide.backoffice.karaf.bundle.offer/offer-data-collection/${project.version}/cfg</configfile>
+		<bundle>mvn:com.leguide.backoffice.karaf.bundle.pixeltracking/beans/${project.version}</bundle>
+		<bundle>mvn:com.leguide.backoffice.karaf.bundle.offer/offer-data-collection/${project.version}</bundle>
+
+	</feature>
+
+
+
+</features>

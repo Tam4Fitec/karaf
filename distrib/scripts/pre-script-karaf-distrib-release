@@ -1,0 +1,21 @@
+#!/bin/bash
+features_version=$FEATURES_VERSION
+distrib_version=$DISTRIB_VERSION
+distrib_type=$DISTRIB_TYPE
+echo "Build distrib " $distrib_type $distrib_version " with features " $features_version
+branch=${features_version:0:${#features_version}-2}.x
+echo "Checkout branch " $branch
+git fetch
+git checkout $branch
+cd distrib/$distrib_type
+xmlstarlet ed -L -P -N x=http://maven.apache.org/POM/4.0.0 -u "/x:project/x:version" -v ${distrib_version} pom.xml
+xmlstarlet ed -L -P -N x=http://maven.apache.org/POM/4.0.0 -u "/x:project/x:properties/x:feature.version" -v ${features_version} pom.xml
+tag_name=$(xmlstarlet sel -N x=http://maven.apache.org/POM/4.0.0 -t -v /x:project/x:artifactId pom.xml)-$distrib_version
+echo "Deploy distrib on Nexus"
+mvn clean install deploy -DskipTests -P release
+echo "Commit and create tag " $tag_name
+git commit -a -m "Release ${distrib_type} ${distrib_version} with features $features_version"
+git tag $tag_name
+git push
+git push --tags
+echo "End."

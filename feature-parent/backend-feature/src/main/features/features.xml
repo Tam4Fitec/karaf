@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="backend-${project.version}">
+
+   <repository>mvn:org.apache.camel.karaf/apache-camel/${camel.version}/xml/features</repository>
+   <repository>mvn:org.apache.karaf.cellar/apache-karaf-cellar/${cellar.version}/xml/features</repository>
+   <repository>mvn:io.hawt/hawtio-karaf/1.3.1/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/dao-backend/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/business/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/camel/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/datasources/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/exports/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/services/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/webservices/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/transformation/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/topsearch/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/offer/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/retargeting-business/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/libraries/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/ksite/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/thesaurus/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/sem/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/teotys/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/security/${project.version}/xml/features</repository>
+   <repository>mvn:com.leguide.backoffice.karaf.feature/capping/${project.version}/xml/features</repository>
+
+   <feature name="backend" version="${project.version}" description="Services for Backend">
+      <feature version="${cellar.version}">cellar</feature>
+      <feature version="${project.version}">hazelcast-service</feature>
+      <feature version="${project.version}">datasources</feature>
+      <feature version="${project.version}">business</feature>
+      <feature version="${project.version}">normalizer</feature>
+      <feature version="${project.version}">exports</feature>
+      <feature version="${project.version}">webservices</feature>
+      <feature version="${project.version}">teotys</feature>
+      <feature version="${project.version}">security</feature>
+      <feature version="${project.version}">business-proxy</feature>
+      <feature version="${project.version}">sem-business</feature>
+      <feature version="${project.version}">transformation</feature>
+      <feature version="${project.version}">business-catalog-offercount</feature>
+      <feature version="${project.version}">export-partner-feed</feature>
+      <feature version="${project.version}">retargeting-business</feature>
+      <feature version="${project.version}">topsearch</feature>
+      <feature version="${project.version}">offer</feature>
+      <feature version="${project.version}">webservices</feature>
+      <feature version="${project.version}">rules-engine-service</feature>
+      <feature version="${project.version}">ksite</feature>
+      <feature version="${project.version}">search-engine-client-service</feature>
+      <feature version="${project.version}">capping</feature>
+      <feature>war</feature>
+      <feature>hawtio</feature>
+      <feature version="${project.version}">jolokia</feature>
+   </feature>
+
+</features>

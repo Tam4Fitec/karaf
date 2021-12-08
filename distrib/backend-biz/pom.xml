@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.leguide.backoffice.karaf</groupId>
+		<artifactId>backoffice-distrib</artifactId>
+		<version>19.21.2</version>
+	</parent>
+
+	<groupId>com.leguide.backoffice.karaf</groupId>
+	<artifactId>backend-distrib-biz</artifactId>
+	<packaging>pom</packaging>
+
+
+	<name>BackOffice Karaf :: full backend business distrib</name>
+	<description>Full backend business distribution based on Apache Karaf</description>
+
+	<properties>
+		<feature.version>${project.version}</feature.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.karaf.tooling</groupId>
+				<artifactId>karaf-maven-plugin</artifactId>
+				<version>3.0.3</version>
+				<executions>
+					<execution>
+						<id>features-add-to-repository</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>features-add-to-repository</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>mvn:org.apache.karaf.features/standard/${karaf.version}/xml/features</descriptor>
+								<descriptor>mvn:org.apache.karaf.features/enterprise/${karaf.version}/xml/features</descriptor>
+                                <descriptor>mvn:org.apache.karaf.features/spring/${karaf.version}/xml/features</descriptor>
+                                <descriptor>mvn:com.leguide.backoffice.karaf.feature/backend-feature/${feature.version}/xml/features</descriptor>
+							</descriptors>
+							<features>
+	 							<feature>backend</feature>
+							</features>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.8</version>
+				<executions>
+					<execution>
+						<id>copy</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<!-- Define here the artifacts which should be considered in the assembly
+								For instance, the branding jar -->
+							<artifactItems>
+								<artifactItem>
+									<groupId>com.leguide.backoffice.karaf.bundle</groupId>
+									<artifactId>branding</artifactId>
+									<version>${feature.version}</version>
+									<outputDirectory>target/dependencies</outputDirectory>
+									<destFileName>leguidebranding-${feature.version}.jar</destFileName>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+					<execution>
+						<!-- Uncompress the standard Karaf distribution -->
+						<id>unpack</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.apache.karaf</groupId>
+									<artifactId>apache-karaf</artifactId>
+									<type>tar.gz</type>
+									<outputDirectory>target/dependencies</outputDirectory>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

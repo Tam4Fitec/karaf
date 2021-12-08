@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+   ">
+
+	<context:component-scan base-package="com.leguide.backoffice.karaf.webservices.client.engine" />
+	<context:annotation-config/>
+	
+<!--    <bean class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"> -->
+<!--        <qualifier value="engineCacheManager"/> -->
+<!--        <property name="cacheManagerName" value="engineCacheManager" /> -->
+<!--        <property name="configLocation" value="classpath:engineCacheConfig.xml" /> -->
+<!--        <property name="shared" value="false" /> -->
+<!--    </bean> -->
+<!--    <bean id="engineProperties" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> -->
+<!--         <property name="ignoreUnresolvablePlaceholders" value="true"/> -->
+<!--         <property name="locations"> -->
+<!--             <list><value>classpath:com/leguide/mobile/engine.properties</value></list> -->
+<!--         </property> -->
+<!--     </bean> -->
+    
+<!--     <bean name="GIEngineConnectionHelper" class="com.leguide.backoffice.karaf.webservices.client.engine.connection.EngineConnectionHelper"> -->
+<!--         <property name="host" value="${engine.adress}"/> -->
+<!--         <property name="port" value="${engine.port}"/> -->
+<!--     </bean> -->
+
+<!--     <bean name="GIEngineService" class="com.leguide.backoffice.karaf.webservices.client.engine.EngineService"> -->
+<!--         <property name="protocoleNumber" value="${engine.protocole}"/> -->
+<!--         <property name="engineConnectionHelper" ref="GIEngineConnectionHelper"/> -->
+<!--     </bean>     -->
+    
+<!--     <bean name="GIEngineClient" class="com.leguide.backoffice.karaf.webservices.client.engine.impl.EngineClient"> -->
+<!--         <property name="language" value="${engineRequest.language}"/> -->
+<!--         <property name="deliveryZone" value="${engineRequest.deliveryZone}"/> -->
+<!--         <property name="site" value="${engineRequest.site}"/> -->
+<!--         <property name="marksNumber" value="${engineRequest.marksNumber}"/> -->
+<!--         <property name="shortLinksNumber" value="${engineRequest.shortLinksNumber}"/> -->
+<!--         <property name="xmlEngineService" ref="GIEngineService"/> -->
+<!--     </bean>     -->
+    
+</beans>

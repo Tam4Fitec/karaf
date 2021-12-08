@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:cxf="http://camel.apache.org/schema/cxf"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd
+        http://www.springframework.org/schema/osgi-compendium
+        http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd"
+       default-lazy-init="false">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.leguide.backoffice.karaf.webservices.wsclient"/>
+
+    <osgi:reference id="feedInfosDao"
+                    interface="com.leguide.backoffice.karaf.bundle.dao.facade.FeedInfosDao"/>
+
+    <osgi:reference id="shopsiteConsumptionDao"
+                    interface="com.leguide.backoffice.karaf.bundle.dao.facade.ShopsiteConsumptionDao"/>
+
+    <osgi:reference id="shopsitePurchaseDao"
+                    interface="com.leguide.backoffice.karaf.bundle.dao.facade.ShopsitePurchaseDao"/>
+
+    <osgi:reference id="shopsiteSubscriptionReportDao"
+                    interface="com.leguide.backoffice.karaf.bundle.dao.facade.ShopsiteSubscriptionReportDao"/>
+
+    <osgi:reference id="invoiceDao"
+                    interface="com.leguide.backoffice.karaf.bundle.dao.facade.InvoiceDao"/>
+
+    <osgi:reference id="ecritureDao"
+                    interface="com.leguide.backoffice.karaf.bundle.dao.facade.EcritureDao"/>
+
+    <osgi:reference id="contactDao"
+                    interface="com.leguide.backoffice.karaf.bundle.dao.facade.ContactDao"/>
+
+    <osgi:reference id="shopSiteService"
+                    interface="com.leguide.backoffice.karaf.bundle.business.service.ShopSiteService"/>
+
+    <osgi:reference id="emailService" interface="com.leguide.backoffice.karaf.services.email.EmailService"/>
+
+    <bean id="enrichInvoiceBean"
+          class="com.leguide.backoffice.karaf.webservices.wsclient.beans.EnrichInvoiceBean"/>
+
+    <bean id="shopsiteConsumptionAdapter"
+          class="com.leguide.backoffice.karaf.webservices.wsclient.beans.ShopsiteConsumptionAdapter"/>
+
+    <bean id="shopsitePurchaseAdapter"
+          class="com.leguide.backoffice.karaf.webservices.wsclient.beans.ShopsitePurchaseAdapter"/>
+
+    <bean id="demandDefinitionBean"
+          class="com.leguide.backoffice.karaf.webservices.wsclient.beans.DemandDefinitionBean" init-method="init"/>
+
+    <bean id="templateMailBean" class="com.leguide.backoffice.karaf.webservices.wsclient.beans.TemplateMailBean"/>
+
+    <bean id="languageBean" class="com.leguide.backoffice.karaf.webservices.wsclient.beans.LanguageBean"
+          init-method="init"/>
+
+    <bean id="sendEmailBean"
+          class="com.leguide.backoffice.karaf.webservices.wsclient.beans.SendEmailBean">
+        <property name="demandDefinitionBean" ref="demandDefinitionBean"/>
+        <property name="templateMailBean" ref="templateMailBean"/>
+        <property name="languageBean" ref="languageBean"/>
+        <property name="emailService" ref="emailService"/>
+        <property name="shopSiteService" ref="shopSiteService"/>
+    </bean>
+
+    <bean id="validationBean"
+          class="com.leguide.backoffice.karaf.webservices.wsclient.beans.ValidationBean">
+        <property name="shopsiteConsumptionDao" ref="shopsiteConsumptionDao"/>
+    </bean>
+
+    <bean id="shopsiteFeedsBean" class="com.leguide.backoffice.karaf.webservices.wsclient.beans.ShopsiteFeedsBean">
+        <property name="feedInfosDao" ref="feedInfosDao"/>
+    </bean>
+
+    <bean id="shopsiteConsumptionBean"
+          class="com.leguide.backoffice.karaf.webservices.wsclient.beans.ShopsiteConsumptionBean">
+        <property name="shopSiteService" ref="shopSiteService"/>
+    </bean>
+
+    <bean id="subscriptionBean"
+          class="com.leguide.backoffice.karaf.webservices.wsclient.beans.SubscriptionBean">
+        <property name="shopsiteSubscriptionReportDao" ref="shopsiteSubscriptionReportDao"/>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="propertiesArray">
+            <array>
+                <osgix:cm-properties id="wsClientProperties"
+                                     persistent-id="com.leguide.backoffice.karaf.bundle.webservices.wsclient"/>
+            </array>
+        </property>
+    </bean>
+
+    <cxf:rsServer id="rsServer" address="/wsclient"
+                  serviceClass="com.leguide.backoffice.karaf.webservices.wsclient.service.ClientService">
+        <cxf:providers>
+            <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
+        </cxf:providers>
+    </cxf:rsServer>
+
+    <camelContext id="camelContextWsClient" xmlns="http://camel.apache.org/schema/spring">
+        <package>com.leguide.backoffice.karaf.webservices.wsclient.route</package>
+    </camelContext>
+</beans>
